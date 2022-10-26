@@ -23,11 +23,17 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home currentUser={currentUser} />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Login" element={<Developers />} />
-        <Route path="/Login" element={<Resource />} />
-        <Route path="/Login" element={<Faq />} />
-        <Route path="/Login" element={<Member />} />
+        <Route path="/Login" element={<Login currentUser={currentUser} />} />
+        <Route
+          path="/Developer"
+          element={<Developers currentUser={currentUser} />}
+        />
+        <Route
+          path="/ResourceHub"
+          element={<Resource currentUser={currentUser} />}
+        />
+        <Route path="/faq" element={<Faq currentUser={currentUser} />} />
+        <Route path="/Member" element={<Member currentUser={currentUser} />} />
         <Route
           path="/SignUp"
           element={<SignUp setCurrentUser={setCurrentUser} />}

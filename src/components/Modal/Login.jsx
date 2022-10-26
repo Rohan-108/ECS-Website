@@ -7,8 +7,8 @@ import { auth } from "../../firebase";
 
 import styles from "./Login.module.css";
 
-function Login() {
-  
+function Login(props) {
+  const {setOpenLogin,setSignup}=props;
   const navigate = useNavigate();
   const [values, setValues] = useState({
     email: "",
@@ -28,7 +28,7 @@ function Login() {
     signInWithEmailAndPassword(auth, values.email, values.pass)
       .then(async (res) => {
         setSubmitButtonDisabled(false);
-        
+        setOpenLogin(false);
         navigate("/");
       })
       .catch((err) => {
@@ -41,6 +41,10 @@ function Login() {
           }
       });
   };
+  const handleClick=()=>{
+    setOpenLogin(false);
+    setSignup(true);
+  }
   return (
     <div className={styles.container}>
       <div className={styles.innerBox}>
@@ -66,13 +70,13 @@ function Login() {
           <button disabled={submitButtonDisabled} onClick={handleSubmission}>
             Login
           </button>
-          <button className={styles.cancel} onClick={()=>{navigate("/")}}>
+          <button className={styles.cancel} onClick={()=>{setOpenLogin(false)}}>
             Cancel
           </button>
           <p>
             Already have an account?{" "}
             <span>
-              <Link to="/signup">Sign up</Link>
+              <a href="#"onClick={handleClick}>Sign up</a>
             </span>
           </p>
         </div>

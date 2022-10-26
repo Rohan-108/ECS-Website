@@ -22,8 +22,13 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home currentUser={currentUser} />} />
-        <Route path="/Login" element={<Login currentUser={currentUser} />} />
+        <Route
+          path="/"
+          element={
+            <Home currentUser={currentUser} setCurrentUser={setCurrentUser} />
+          }
+        />
+        {/* <Route path="/Login" element={<Login currentUser={currentUser} />} /> */}
         <Route
           path="/Developer"
           element={<Developers currentUser={currentUser} />}
@@ -34,10 +39,10 @@ function App() {
         />
         <Route path="/faq" element={<Faq currentUser={currentUser} />} />
         <Route path="/Member" element={<Member currentUser={currentUser} />} />
-        <Route
+        {/* <Route
           path="/SignUp"
           element={<SignUp setCurrentUser={setCurrentUser} />}
-        />
+        /> */}
       </Routes>
     </>
   );

@@ -4,10 +4,10 @@ import {auth}from '../../firebase';
 import Navbar from '../Navbar/Navbar';
 import "./home.css"
 const Home = (props) => {
-  const{currentUser}=props;
+  const{currentUser,setCurrentUser}=props;
   return (
     <div className='container'>
-      <Navbar currentUser={currentUser} />
+      <Navbar currentUser={currentUser} setCurrentUser={setCurrentUser}/>
     </div>
   )
 }

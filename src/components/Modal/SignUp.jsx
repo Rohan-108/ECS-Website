@@ -9,7 +9,7 @@ import styles from "./SignUp.module.css";
 
 function SignUp(props) {
   //const history=useHistory();
-  const {setCurrentUser}=props;
+  const {setCurrentUser,setSignup,setOpenLogin}=props;
   const navigate = useNavigate();
   const [values, setValues] = useState({//function to setup form details
     name: "",
@@ -43,6 +43,7 @@ function SignUp(props) {
           displayName: values.name,
         });
         setCurrentUser(auth.currentUser);
+        setSignup(false);
         navigate("/");
       })
       .catch((err) => {
@@ -53,7 +54,10 @@ function SignUp(props) {
         
       });
   };
-
+  const handleClick=()=>{
+    setSignup(false);
+    setOpenLogin(true);
+  }
   return (
     <div className={styles.container}>
       <div className={styles.innerBox}>
@@ -86,13 +90,13 @@ function SignUp(props) {
           <button onClick={handleSubmission} disabled={submitButtonDisabled}>
             Signup
           </button>
-          <button className={styles.cancel} onClick={()=>{navigate("/")}}>
+          <button className={styles.cancel} onClick={()=>{setSignup(false)}}>
             Cancel
           </button>
           <p>
             Already have an account?{" "}
             <span>
-              <Link to="/login">Login</Link>
+              <a href="#"onClick={handleClick}>Login</a>
             </span>
           </p>
         </div>

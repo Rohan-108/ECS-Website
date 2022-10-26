@@ -1,9 +1,9 @@
 import React from 'react'
 
-const resource = () => {
+const Resource = () => {
   return (
     <div>resource</div>
   )
 }
 
-export default resource
+export default Resource

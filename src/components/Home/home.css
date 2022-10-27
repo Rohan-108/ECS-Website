@@ -1,5 +1,196 @@
-.container{
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(180deg, #040036 -1.5%, rgba(25, 0, 95, 0.94) 22.04%, rgba(50, 5, 148, 0.82) 42.48%, rgba(118, 38, 205, 0.765252) 63.05%, rgba(148, 36, 236, 0.67) 85.8%, rgba(76, 16, 111, 0.859997) 95.73%, #450050 102.69%, #1F0027 112.61%);
+
+.hero_section{
+    position: relative;
+    padding: 2rem;
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+.heading{
+    display: block;
+    font-size: 2.5rem;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 5rem;
+    z-index: 10;
+}
+.nit{
+    display: block;
+    font-size: 2rem;
+    color: white;
+    z-index: 10;
+}
+@media only screen and (max-width:830px){
+    .heading{
+        font-size: 1.3rem;
+        letter-spacing: 1.5px;
+        line-height: 5rem;
+    }
+    .nit{
+        font-size: 1.3rem;
+    }
+    .hero_section{
+        padding: 1rem;
+    }
+}
+@media only screen and (max-width:500px) {
+    .heading {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        line-height: 5rem;
+    }
+
+    .nit {
+        font-size: 1.2rem;
+    }
+
+    .hero_section {
+        padding: 1rem;
+    }
+}
+#poly1{
+    position: absolute;
+    display: block;
+    width: 180px;
+    top: 10%;
+    height: 150px;
+    z-index: 2;
+}
+#poly2{
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    display: block;
+     width: 90px;
+    height: 76px;
+    z-index: 1;
+}
+#poly3{
+    position: absolute;
+    display: block;
+    width: 180px;
+    height: 150px;
+    top: 0;
+    right: 10%;
+    z-index: 5;
+}
+.message_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.sliders{
+    margin-top: 5rem;
+    margin-inline: 2rem;
+    display: block;
+    text-align: center;
+    color: white;
+}
+#img2s{
+    display: block;
+    height: 80px;
+    width:80px;
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+    margin: 2rem;
+
+}
+.mess ,.about_mess{
+    max-width: 1080px;
+    line-height: 30px;
+}
+.about_us{
+    margin-top: 5rem;
+    margin-inline: 2rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.annual{
+    margin-top: 5rem;
+    margin-inline: 2rem;
+    display: block;
+    text-align: center;
+    color: white;
+}
+.card_container{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-inline: auto;
+    padding: .5rem;
+    height: 25rem;
+    width: 20rem;
+    background: linear-gradient(180deg, #040036 -1.5%, rgba(25, 0, 95, 0.94) 22.04%, rgba(50, 5, 148, 0.82) 42.48%, rgba(118, 38, 205, 0.765252) 63.05%, rgba(148, 36, 236, 0.67) 85.8%, rgba(76, 16, 111, 0.859997) 95.73%, #450050 102.69%, #1F0027 112.61%);
+    text-align: center;
+    border-radius: 5rem;
+}
+.card_container>p{
+    color: rgb(186, 59, 225);
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+#imgS1{
+    height:5rem;
+    width: 100%;
+}
+.messs{
+    text-align: center;
+    display: block;
+    margin-top:2rem ;
+    max-width: 100%;
+    color: black;
+}
+
+.galleryCard{
+    display: flex;
+        align-items: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-inline: auto;
+        padding: .5rem;
+        height: 25rem;
+        width: 20rem;
+        text-align: center;
+        border-radius: 5rem;
+}
+#imgS4{
+    display: block;
+    border-radius: 5%;
+    height: 25rem;
+    width: 20rem;
+    object-fit: contain;
+}
+.gallery_container{
+    margin-top: 5rem;
+        margin-inline: 2rem;
+        display: block;
+        text-align: center;
+        color: white;
+    }
+ .button1{
+    display: block;
+    margin-top: 3rem;
+    margin-inline: auto;
+    max-width: 6rem;
+    outline: none;
+    border: none;
+    background-color: #9900ff;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 16px;
+    width: 100%;
+    cursor: pointer;
+ }   

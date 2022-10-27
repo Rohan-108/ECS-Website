@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,900;1,500&display=swap');
+
+.Glimpses{
+    /* color: white; */ 
+    font-family: Poppins, sans-serif;
+    font-size: 2.2rem;
+}
+
+.card{
+    width: 30%;
+    border-radius: 15%;
+    margin-inline: 2em;
+    margin-block: 1.5em;
+}
+
+.card-img-top{
+    border-radius: 15%;
+    width: 23vw;
+    height: 38vh;
+    object-fit: cover;
+}
+
+.Big_Div{
+    justify-content: center;
+    text-align: center;
+}
+
+.flex_Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

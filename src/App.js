@@ -9,6 +9,8 @@ import Developers from "./components/Developers/Developers";
 import Faq from "./components/FAQ/Faq";
 import Member from "./components/Members/Member";
 import Resource from "./components/resource/Resource";
+import Gallery from "./components/Gallery/Gallery";
+
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
   onAuthStateChanged(auth, (user) => {
@@ -37,7 +39,8 @@ function App() {
           path="/ResourceHub"
           element={<Resource currentUser={currentUser} />}
         />
-        <Route path="/faq" element={<Faq currentUser={currentUser} />} />
+        <Route path="/Gallery" element={<Gallery/>}/>
+        <Route path="/Faq" element={<Faq currentUser={currentUser} />} />
         <Route path="/Member" element={<Member currentUser={currentUser} />} />
         {/* <Route
           path="/SignUp"

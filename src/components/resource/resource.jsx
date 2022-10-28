@@ -47,7 +47,8 @@ import ec401 from "../../assets/ResHubImages/7thSemImg/EC401.jpg"
 import ec437 from "../../assets/ResHubImages/7thSemImg/EC437.jpg"
 import ec481 from "../../assets/ResHubImages/7thSemImg/EC481.jpg"
 import ms401 from "../../assets/ResHubImages/7thSemImg/MS401.jpg"
-
+/////particle effect
+import Particle from '../Particle'
 const Resource = (props) => {
   const {currentUser,setCurrentUser}=props;
   const [view,setView]=useState(true);
@@ -102,6 +103,7 @@ const Resource = (props) => {
   }
   return (
     <>
+    <Particle/>
     <Navbar currentUser={currentUser} setCurrentUser={setCurrentUser}/>
     <div style={{display:'flex',justifyContent:"center",alignItems:"center"}}>
       <img src={Reading} alt="reading" />
@@ -193,14 +195,8 @@ const Resource = (props) => {
         <button className='button' onClick={handleclick}>Go Back</button>
       </div>
     }
-    {book[7].value &&<div className="cards">
-      <div className="wrapper">
-        <Book bookName={"MA-101"} src={Ma101}/>
-        <Book bookName={"CE-101"} src={ce101}/>
-        <Book bookName={"CS-101"} src={cs101}/>
-        <Book bookName={"EC-101"} src={ec101}/>
-        <Book bookName={"CH-101"} src={ch101}/>
-        </div>
+    {book[7].value &&<div style={{display:"flex",justifyContent:"center",flexDirection:"column",gap:'2rem',alignItems:"center"}}>
+       <GlassCard filename={"Study by Yourself"}/>
         <button className='button' onClick={handleclick}>Go Back</button>
       </div>
     }

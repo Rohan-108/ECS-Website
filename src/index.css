@@ -8,4 +8,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(180deg, #040036 -1.5%, rgba(25, 0, 95, 0.94) 22.04%, rgba(50, 5, 148, 0.82) 42.48%, rgba(118, 38, 205, 0.765252) 63.05%, rgba(148, 36, 236, 0.67) 85.8%, rgba(76, 16, 111, 0.859997) 95.73%, #450050 102.69%, #1F0027 112.61%);
-}
+  background-repeat: no-repeat;
+  background-size: cover;
+  }

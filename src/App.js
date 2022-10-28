@@ -37,7 +37,12 @@ function App() {
         />
         <Route
           path="/ResourceHub"
-          element={<Resource currentUser={currentUser} />}
+          element={
+            <Resource
+              currentUser={currentUser}
+              setCurrentUser={setCurrentUser}
+            />
+          }
         />
         <Route path="/Gallery" element={<Gallery/>}/>
         <Route path="/Faq" element={<Faq currentUser={currentUser} />} />

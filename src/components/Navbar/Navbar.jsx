@@ -25,7 +25,6 @@ const Navbar = (props) => {
     if(x===1)setStyle('nav1');
     if(x===2)setStyle('');
   }
-  console.log(currentUser);
   return (
     <>
     {openLogin && <Login setOpenLogin={setOpenLogin} setSignup={setSignup}

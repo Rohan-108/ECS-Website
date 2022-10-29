@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
 import InputControl from "./InputControl";
@@ -8,7 +8,7 @@ import { auth } from "../../firebase";
 import styles from "./Login.module.css";
 
 function Login(props) {
-  const {setOpenLogin,setSignup}=props;
+  const {setOpenLogin,setSignup,setCurrentUser}=props;
   const navigate = useNavigate();
   const [values, setValues] = useState({
     email: "",
@@ -29,6 +29,7 @@ function Login(props) {
       .then(async (res) => {
         setSubmitButtonDisabled(false);
         setOpenLogin(false);
+        setCurrentUser(auth.currentUser);
         navigate("/");
       })
       .catch((err) => {
@@ -56,6 +57,7 @@ function Login(props) {
             setValues((prev) => ({ ...prev, email: event.target.value }))
           }
           placeholder="Enter email address"
+          type="email"
         />
         <InputControl
           label="Password"
@@ -63,6 +65,7 @@ function Login(props) {
             setValues((prev) => ({ ...prev, pass: event.target.value }))
           }
           placeholder="Enter Password"
+          type="password"
         />
 
         <div className={styles.footer}>

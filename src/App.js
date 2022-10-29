@@ -1,7 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
-import Login from "./components/Modal/Login";
-import SignUp from "./components/Modal/SignUp";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./firebase";
 import { useState } from "react";
@@ -20,7 +18,6 @@ function App() {
       setCurrentUser(null);
     }
   });
-  console.log(currentUser);
   return (
     <>
       <Routes>
@@ -44,7 +41,7 @@ function App() {
             />
           }
         />
-        <Route path="/Gallery" element={<Gallery/>}/>
+        <Route path="/Gallery" element={<Gallery />} />
         <Route path="/Faq" element={<Faq currentUser={currentUser} />} />
         <Route path="/Member" element={<Member currentUser={currentUser} />} />
         {/* <Route

@@ -3,7 +3,7 @@ import logo from "../../assets/images/logo.png"
 import login from "../../assets/images/login.png"
 import exit from "../../assets/images/exit.svg"
 import menu from "../../assets/images/menu.svg"
-import { Link,useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import "./navbar.css"
 import Login from "../Modal/Login"
 import SignUp from '../Modal/SignUp';
@@ -14,7 +14,6 @@ const Navbar = (props) => {
   const[openSignup,setSignup]=useState(false);
   const[modal,setModal]=useState(false);
   const[style,setStyle]=useState('');
-  const navigate=useNavigate();
   const handleClick=()=>{
         if(currentUser){
           setModal((prev)=>!prev);
@@ -26,15 +25,18 @@ const Navbar = (props) => {
     if(x===1)setStyle('nav1');
     if(x===2)setStyle('');
   }
+  console.log(currentUser);
   return (
     <>
-    {openLogin && <Login setOpenLogin={setOpenLogin} setSignup={setSignup} />}
+    {openLogin && <Login setOpenLogin={setOpenLogin} setSignup={setSignup}
+    setCurrentUser={setCurrentUser} />}
     {openSignup && <SignUp setOpenLogin={setOpenLogin} setSignup={setSignup} setCurrentUser={setCurrentUser} />}
     <div className='navbar_container'>
       <div className="logo">
         <img onClick={()=>changeStyle(1)} id="mobile-cta" className="mobile-menu" src={menu} alt="Open navigation" />
         <img id="logoPng" src={logo} alt="ecs logo" />
         <img onClick={handleClick}id="loginPng" src={login} alt ="login button" />
+        {currentUser && <p className='displayname'>{currentUser.displayName}</p>}
         {modal && <SignOut setModal={setModal}/>}
       </div>
       <nav className={style}>
@@ -47,7 +49,7 @@ const Navbar = (props) => {
              <Link to="/ResourceHub">Resource Hub</Link>
           </li>}
           <li>
-             <a href="#">Annual Attractions</a>
+             <a href="#annual_atta">Annual Attractions</a>
           </li>
           <li>
              <a href="#">About Us</a>

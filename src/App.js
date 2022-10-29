@@ -8,7 +8,7 @@ import Faq from "./components/FAQ/Faq";
 import Member from "./components/Members/Member";
 import Resource from "./components/resource/Resource";
 import Gallery from "./components/Gallery/Gallery";
-
+import Protected from "./Protected";
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
   onAuthStateChanged(auth, (user) => {
@@ -35,10 +35,12 @@ function App() {
         <Route
           path="/ResourceHub"
           element={
-            <Resource
-              currentUser={currentUser}
-              setCurrentUser={setCurrentUser}
-            />
+            <Protected currentUser={currentUser}>
+              <Resource
+                currentUser={currentUser}
+                setCurrentUser={setCurrentUser}
+              />
+            </Protected>
           }
         />
         <Route path="/Gallery" element={<Gallery />} />

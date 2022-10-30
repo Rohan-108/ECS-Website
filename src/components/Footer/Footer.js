@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='footer_container'>
             <div className="grid_container">
                 <div className="col1">
-                    <p style={{fontWeight:500}}>Quick Links</p>
+                    <p style={{fontWeight:500, color: "black"}}>Quick Links</p>
                     <div style={{display:"flex",flexDirection:"column",fontSize:".8rem",justifyContent:"center",textAlign:"center",gap:"1rem"}}>
                     <Link to="/ResourceHub">Resource Hub</Link>
                     <a href='#'>Message</a>
@@ -16,13 +16,13 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="col2">
-                    <p style={{fontWeight:500}}>Contact Us</p>
+                    <p style={{fontWeight:500, color: "black"}}>Contact Us</p>
                     <div>
                     <p style={{color:"white"}}>Email: ecs.nitsilchar2022@gmail.com</p>
                     </div>
                 </div>
                 <div className="col3" >
-                    <p style={{fontWeight:500}}>Quick Links</p>
+                    <p style={{fontWeight:500, color: "black"}}>Quick Links</p>
                     <div style={{display:"flex",flexDirection:"column",fontSize:".8rem",justifyContent:"center",textAlign:"center",gap:"1rem"}}>
                     <a href='#'>Message</a>
                     <Link to="/Member">Members</Link>

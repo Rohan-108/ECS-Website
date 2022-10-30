@@ -12,6 +12,7 @@ import girl from "../../assets/images/girl.jpg"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Particle from '../Particle';
+import Footer from '../Footer/Footer';
 const Home = (props) => {
   const{currentUser,setCurrentUser}=props;
       const settings1 = {
@@ -111,37 +112,8 @@ const Home = (props) => {
               <GalleryCard src={girl} />
               <GalleryCard src={girl} />
         </Slider>
-        <Link className='button1' to="/gallery">Show More</Link>
-      </div>
-      <div className='footer_container'>
-        <div className="grid_container">
-          <div className="col1">
-            <p style={{fontWeight:500}}>Quick Links</p>
-            <div style={{display:"flex",flexDirection:"column",fontSize:".8rem",justifyContent:"center",textAlign:"center",gap:"1rem"}}>
-              <Link to="/ResourceHub">Resource Hub</Link>
-              <a href='#'>Message</a>
-              <a href='#'>Annual Attractions</a>
-            </div>
-          </div>
-          <div className="col2">
-            <p style={{fontWeight:500}}>Contact Us</p>
-            <div>
-              <p style={{color:"white"}}>Email: ecs.nitsilchar2022@gmail.com</p>
-            </div>
-          </div>
-          <div className="col3" >
-            <p style={{fontWeight:500}}>Quick Links</p>
-            <div style={{display:"flex",flexDirection:"column",fontSize:".8rem",justifyContent:"center",textAlign:"center",gap:"1rem"}}>
-              <a href='#'>Message</a>
-              <Link to="/Member">Members</Link>
-              <Link to="/Gallery">Gallery</Link>
-            </div>
-          </div>
-        </div>
-        <div className='copyright'>
-          <p>© Copyright 2022 All rights reserved</p>
-          <p>ECS NIT Silchar</p>
-        </div>
+        <Link className='button1' to="/Gallery">Show More</Link>
+        <Footer></Footer>
       </div>
     </>
   )

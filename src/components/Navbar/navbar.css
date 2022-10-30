@@ -122,3 +122,9 @@ li:hover{
                     left: 50vw;
                 }
 }
+.displayname{
+    position: absolute;
+    top: 48px;
+    right: 8px;
+    color: whitesmoke;
+}

@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import { Link, useNavigate} from "react-router-dom";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import {useNavigate} from "react-router-dom";
+import { signInWithEmailAndPassword ,sendPasswordResetEmail} from "firebase/auth";
 
 import InputControl from "./InputControl";
 import { auth } from "../../firebase";
 
 import styles from "./Login.module.css";
+import { async } from "@firebase/util";
 
 function Login(props) {
-  const {setOpenLogin,setSignup}=props;
+  const {setOpenLogin,setSignup,setCurrentUser}=props;
   const navigate = useNavigate();
   const [values, setValues] = useState({
     email: "",
@@ -16,30 +17,43 @@ function Login(props) {
   });
   const [errorMsg, setErrorMsg] = useState("");
   const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
-
+  const [forgot,setForgot]=useState(false);
   const handleSubmission = () => {
-    if (!values.email || !values.pass) {
-      setErrorMsg("Fill all fields");
-      return;
+    if(forgot){
+        sendPasswordResetEmail(auth,values.email)
+          .then(async (res)=>{
+            setErrorMsg("Email sent")
+              setForgot(false);
+          })
+          .catch((err)=>{
+            setErrorMsg(err.message);
+          })
     }
-    setErrorMsg("");
+    else{
+        if (!values.email || !values.pass) {
+          setErrorMsg("Fill all fields");
+          return;
+        }
+        setErrorMsg("");
 
-    setSubmitButtonDisabled(true);
-    signInWithEmailAndPassword(auth, values.email, values.pass)
-      .then(async (res) => {
-        setSubmitButtonDisabled(false);
-        setOpenLogin(false);
-        navigate("/");
-      })
-      .catch((err) => {
-        setSubmitButtonDisabled(false);
-         if(err.code === 'auth/wrong-password'){
-            setErrorMsg('Please check the Password');
-          }
-          if(err.code === 'auth/user-not-found'){
-            setErrorMsg('Please check the Email');
-          }
-      });
+        setSubmitButtonDisabled(true);
+        signInWithEmailAndPassword(auth, values.email, values.pass)
+          .then(async (res) => {
+            setSubmitButtonDisabled(false);
+            setOpenLogin(false);
+            setCurrentUser(auth.currentUser);
+            navigate("/");
+          })
+          .catch((err) => {
+            setSubmitButtonDisabled(false);
+              if(err.code === 'auth/wrong-password'){
+                setErrorMsg('Please check the Password');
+              }
+              if(err.code === 'auth/user-not-found'){
+                setErrorMsg('Please check the Email');
+              }
+          });
+    }
   };
   const handleClick=()=>{
     setOpenLogin(false);
@@ -48,7 +62,7 @@ function Login(props) {
   return (
     <div className={styles.container}>
       <div className={styles.innerBox}>
-        <h1 className={styles.heading}>Login</h1>
+        <h1 className={styles.heading}>{forgot?"Reset":"Login"}</h1>
 
         <InputControl
           label="Email"
@@ -56,19 +70,23 @@ function Login(props) {
             setValues((prev) => ({ ...prev, email: event.target.value }))
           }
           placeholder="Enter email address"
+          type="email"
         />
-        <InputControl
+        {!forgot &&<InputControl
           label="Password"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, pass: event.target.value }))
           }
           placeholder="Enter Password"
+          type="password"
         />
-
+        }
+         {!forgot &&<p onClick={()=>{setForgot(true)}}style={{position:"absolute",top:"53%",fontSize:"14px",textDecoration:"underline",cursor:"pointer"}}>Forgot Password?</p>
+        }
         <div className={styles.footer}>
           <b className={styles.error}>{errorMsg}</b>
           <button disabled={submitButtonDisabled} onClick={handleSubmission}>
-            Login
+            {forgot?"Send Email":"Login"}
           </button>
           <button className={styles.cancel} onClick={()=>{setOpenLogin(false)}}>
             Cancel

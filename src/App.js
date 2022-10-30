@@ -1,7 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
-import Login from "./components/Modal/Login";
-import SignUp from "./components/Modal/SignUp";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./firebase";
 import { useState } from "react";
@@ -10,7 +8,7 @@ import Faq from "./components/FAQ/Faq";
 import Member from "./components/Members/Member";
 import Resource from "./components/resource/Resource";
 import Gallery from "./components/Gallery/Gallery";
-
+import Protected from "./Protected";
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
   onAuthStateChanged(auth, (user) => {
@@ -20,7 +18,6 @@ function App() {
       setCurrentUser(null);
     }
   });
-  console.log(currentUser);
   return (
     <>
       <Routes>
@@ -38,13 +35,15 @@ function App() {
         <Route
           path="/ResourceHub"
           element={
-            <Resource
-              currentUser={currentUser}
-              setCurrentUser={setCurrentUser}
-            />
+            <Protected currentUser={currentUser}>
+              <Resource
+                currentUser={currentUser}
+                setCurrentUser={setCurrentUser}
+              />
+            </Protected>
           }
         />
-        <Route path="/Gallery" element={<Gallery/>}/>
+        <Route path="/Gallery" element={<Gallery />} />
         <Route path="/Faq" element={<Faq currentUser={currentUser} />} />
         <Route path="/Member" element={<Member currentUser={currentUser} />} />
         {/* <Route

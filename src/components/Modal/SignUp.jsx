@@ -69,6 +69,7 @@ function SignUp(props) {
           onChange={(event) =>
             setValues((prev) => ({ ...prev, name: event.target.value }))
           }
+          type={"text"}
         />
         <InputControl
           label="Email"
@@ -76,6 +77,7 @@ function SignUp(props) {
           onChange={(event) =>
             setValues((prev) => ({ ...prev, email: event.target.value }))
           }
+          type={"email"}
         />
         <InputControl
           label="Password"
@@ -83,6 +85,7 @@ function SignUp(props) {
           onChange={(event) =>
             setValues((prev) => ({ ...prev, pass: event.target.value }))
           }
+          type={"password"}
         />
 
         <div className={styles.footer}>

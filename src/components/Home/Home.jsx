@@ -91,7 +91,7 @@ const Home = (props) => {
           ECS always facilitates the freshers with warm atmosphere so that they get acquainted with the norms of the branch and the college and also encourages them to create a fresh bond with the seniors.
         </div>
       </div>
-      <div className="annual">
+      <div className="annual" id='annual_atta'>
         <h2>Annual Attractions</h2>
         <Slider {...settings}>
                 <Cards src={Polygon} message={"The technical weekend of ECS, alias Spectrum, is the platform where students are urged to showcase their technical skills and knowledge which is conducted once annually. It nurtures their base and helps them strengthen their skills in a fun way. more..."}

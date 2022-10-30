@@ -1,9 +1,7 @@
-import React from 'react'
-import "../Gallery/Gallery.css"
-import events from '../../assets/images/events.png'
-import { Link } from 'react-router-dom'
-import {auth} from '../../firebase';
-import Navbar from '../Navbar/Navbar'
+import React from "react";
+import "../Gallery/Gallery.css";
+import events from "../../assets/images/events.png";
+import Navbar from "../Navbar/Navbar";
 
 export default function Gallery(props){
 
@@ -77,7 +75,7 @@ export default function Gallery(props){
                     </div>
                 </div>
             </div>
-        </div>
-        </>
-    )
+          </div>
+    </>
+  );
 }

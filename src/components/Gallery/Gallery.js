@@ -2,6 +2,7 @@ import React from "react";
 import "../Gallery/Gallery.css";
 import events from "../../assets/images/events.png";
 import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 
 export default function Gallery(props){
 
@@ -75,7 +76,8 @@ export default function Gallery(props){
                     </div>
                 </div>
             </div>
-          </div>
+            <Footer/>
+        </div>
     </>
   );
 }

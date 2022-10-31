@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import logo from "../../assets/images/logo.png"
 import login from "../../assets/images/login.png"
 import exit from "../../assets/images/exit.svg"
@@ -48,16 +48,16 @@ const Navbar = (props) => {
              <Link to="/ResourceHub">Resource Hub</Link>
           </li>}
           <li>
-             <a href="#annual_atta">Annual Attractions</a>
+             <a href="#annual">Annual Attractions</a>
           </li>
           <li>
-             <a href="#">About Us</a>
+             <a href="#about_us">About Us</a>
           </li>
           <li>
              <Link to="/Member">Members</Link>
           </li>
           <li>
-             <Link to="/Developers">Developers</Link>
+             <Link to="/Developer">Developers</Link>
           </li>
           <li>
              <Link to="/faq">FAQ</Link>

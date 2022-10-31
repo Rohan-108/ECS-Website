@@ -57,7 +57,7 @@ const Navbar = (props) => {
              <Link to="/Member">Members</Link>
           </li>
           <li>
-             <Link to="/Developers">Developers</Link>
+             <Link to="/Developer">Developers</Link>
           </li>
           <li>
              <Link to="/faq">FAQ</Link>

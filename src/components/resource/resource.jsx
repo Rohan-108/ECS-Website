@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Navbar from "../Navbar/Navbar"
 import "./Resource.css"
-import { Link } from 'react-router-dom'
 import GlassCard from './GlassCard'
 import Reading from "../../assets/images/reading.svg"
 import Book from './Book'
@@ -49,6 +48,7 @@ import ec481 from "../../assets/ResHubImages/7thSemImg/EC481.jpg"
 import ms401 from "../../assets/ResHubImages/7thSemImg/MS401.jpg"
 /////particle effect
 import Particle from '../Particle'
+import Footer from '../Footer/Footer'
 const Resource = (props) => {
   const {currentUser,setCurrentUser}=props;
   const [view,setView]=useState(true);
@@ -200,38 +200,7 @@ const Resource = (props) => {
         <button className='button' onClick={handleclick}>Go Back</button>
       </div>
     }
-
-    {/* footer section */}
-     <div className='footer_container'>
-        <div className="grid_container">
-          <div className="col1">
-            <p style={{fontWeight:500}}>Quick Links</p>
-            <div style={{display:"flex",flexDirection:"column",fontSize:".8rem",justifyContent:"center",textAlign:"center",gap:"1rem"}}>
-              <Link to="/ResourceHub">Resource Hub</Link>
-              <a href='#'>Message</a>
-              <a href='#'>Annual Attractions</a>
-            </div>
-          </div>
-          <div className="col2">
-            <p style={{fontWeight:500}}>Contact Us</p>
-            <div>
-              <p style={{color:"white"}}>Email: ecs.nitsilchar2022@gmail.com</p>
-            </div>
-          </div>
-          <div className="col3" >
-            <p style={{fontWeight:500}}>Quick Links</p>
-            <div style={{display:"flex",flexDirection:"column",fontSize:".8rem",justifyContent:"center",textAlign:"center",gap:"1rem"}}>
-              <a href='#'>Message</a>
-              <Link to="/Member">Members</Link>
-              <Link to="/Gallery">Gallery</Link>
-            </div>
-          </div>
-        </div>
-        <div className='copyright'>
-          <p>© Copyright 2022 All rights reserved</p>
-          <p>ECS NIT Silchar</p>
-        </div>
-      </div>
+    <Footer />
     </>
   )
 }

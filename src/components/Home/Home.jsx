@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar';
 import Hero from './Hero';
@@ -14,6 +14,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Particle from '../Particle';
 import Footer from '../Footer/Footer';
 const Home = (props) => {
+  const ref=useRef();
   const{currentUser,setCurrentUser}=props;
       const settings1 = {
       dots: true,
@@ -68,7 +69,7 @@ const Home = (props) => {
   return (
     <>
       <Particle />
-      <Navbar currentUser={currentUser} setCurrentUser={setCurrentUser}/>
+      <Navbar currentUser={currentUser} setCurrentUser={setCurrentUser} scollToRef={ref}/>
       <Hero />
       <div className='sliders'>
         <h2>Message</h2>
@@ -77,7 +78,7 @@ const Home = (props) => {
         <Message message={"ECE is one most active societies of NITS, and I feel privileged to serve as its Vice President for the session 2021-22. As a society, we aim to provide a platform where the students get ample opportunities to explore, learn, and grow in technical as well as non-technical fields. We will continue to work hard and take ECS to greater heights. I would request everyone to make the most out of these opportunities and enhance their skillset. I wish everyone the best of luck for all their future endeavours"} name={"Aryan"} designation={"General Secretary"} src={Polygon}/>
         </Slider>
       </div>
-      <div className='about_us' id="about">
+      <div className='about_us' id="about_us">
         <img src={Polygon} alt="polygon" id='p1' />
         <img src={Polygon} alt="polygon" id='p2' />
         <img src={Polygon} alt="polygon" id='p3' />
@@ -91,7 +92,7 @@ const Home = (props) => {
           ECS always facilitates the freshers with warm atmosphere so that they get acquainted with the norms of the branch and the college and also encourages them to create a fresh bond with the seniors.
         </div>
       </div>
-      <div className="annual" id='annual_atta'>
+      <div className="annual" id='annual'>
         <h2>Annual Attractions</h2>
         <Slider {...settings}>
                 <Cards src={Polygon} message={"The technical weekend of ECS, alias Spectrum, is the platform where students are urged to showcase their technical skills and knowledge which is conducted once annually. It nurtures their base and helps them strengthen their skills in a fun way. more..."}
@@ -113,8 +114,8 @@ const Home = (props) => {
               <GalleryCard src={girl} />
         </Slider>
         <Link className='button1' to="/Gallery">Show More</Link>
-        <Footer></Footer>
       </div>
+      <Footer />
     </>
   )
 }

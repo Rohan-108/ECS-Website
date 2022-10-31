@@ -6,7 +6,7 @@ const Message = (props) => {
     const{message,name,designation,src}=props;
   return (
     <div className='message_container'>
-        <img src={src} alt="image for people" id='img2s'/>
+        <img src={src} alt="image for people" id='img2s' loading='lazy'/>
         <div className="mess">{message}</div>
         <div className="name_deg">
             <p>{name}</p>

@@ -50,6 +50,8 @@ function SignUp(props) {
         setSubmitButtonDisabled(false);
         if (err.code === 'auth/email-already-in-use') {
             setErrorMsg('Email Already in Use');
+          }else{
+            setErrorMsg(err.message);
           }
         
       });

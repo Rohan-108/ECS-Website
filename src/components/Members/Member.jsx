@@ -2,7 +2,15 @@ import React from 'react'
 import CardRayyan from '../CardRayyan/CardRayyan.jsx'
 import Footer from '../Footer/Footer.js'
 import Navbar from '../Navbar/Navbar.jsx'
+import Particle from '../Particle.js'
 import "./member.css"
+////imports for images//////
+import vibha from "../../assets/MemberImage/vibha.jpeg"
+import aryadeep from "../../assets/MemberImage/aryadeep.jpeg"
+import bhargab from "../../assets/MemberImage/bhargab.jpeg"
+import sanidhya from "../../assets/MemberImage/sanidhya.jpeg"
+import diptabh from "../../assets/MemberImage/diptabh.jpeg"
+import ananya from "../../assets/MemberImage/ananya.jpeg"
 
 const Member = ({currentUser,setCurrentUser}) => {
 
@@ -51,19 +59,22 @@ const Member = ({currentUser,setCurrentUser}) => {
       name: "Bhargab Raj Gogoi",
       desig: "Junior Executive Member",
       insta: "link",
-      linkedin: "link"
+      linkedin: "link",
+      src:bhargab
     },
     {
       name: "Sanidhya Sinha",
       desig: "Junior Executive Member",
       insta: "link",
-      linkedin: "link"
+      linkedin: "link",
+      src:sanidhya
     },
     {
       name: "Vibha Garg",
       desig: "Junior Executive Member",
       insta: "link",
-      linkedin: "link"
+      linkedin: "link",
+      src:vibha
     },
     {
       name: "Priyambada Hazarika",
@@ -75,19 +86,22 @@ const Member = ({currentUser,setCurrentUser}) => {
       name: "Aryadeep Gogoi",
       desig: "Junior Design Member",
       insta: "link",
-      linkedin: "link"
+      linkedin: "link",
+      src:aryadeep
     },
     {
       name: "Diptabh Medhi",
       desig: "Junior Literary Member",
       insta: "link",
-      linkedin: "link"
+      linkedin: "link",
+      src:diptabh
     },
     {
       name: "Ananya Chetia",
       desig: "Junior Literary Member",
       insta: "link",
-      linkedin: "link"
+      linkedin: "link",
+      src:ananya
     },
     {
       name: "Uttirna Talukdar",
@@ -100,6 +114,7 @@ const Member = ({currentUser,setCurrentUser}) => {
 
   return (
     <>
+      <Particle/>
       <Navbar currentUser={currentUser} setCurrentUser={setCurrentUser} />
       <div className="lead">
       {leadData.map((elem, i) => 

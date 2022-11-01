@@ -3,7 +3,8 @@ import CardRayyan from '../CardRayyan/CardRayyan.jsx'
 import Footer from '../Footer/Footer.js'
 import Navbar from '../Navbar/Navbar.jsx'
 import "./developers.css"
-
+import Particle from "../Particle"
+import rohan from "../../assets/MemberImage/rohan.jpg"
 const Developers = ({currentUser,setCurrentUser}) => {
   
   const devData = [
@@ -17,7 +18,8 @@ const Developers = ({currentUser,setCurrentUser}) => {
     name: "Rohan Jha",
     desig: "Junior Technical Member",
     insta: "link",
-    linkedin: "link"
+    linkedin: "link",
+    src:rohan
   },
   {
     name: "Vishnu Padmakumar",
@@ -27,13 +29,13 @@ const Developers = ({currentUser,setCurrentUser}) => {
   },
   {
     name: "Himangshu Sharma",
-    desig: "Junior Technical Member",
+    desig: "Junior Design Member",
     insta: "link",
     linkedin: "link"
   },
   {
-    name: "Himangshu Sharma",
-    desig: "Junior Technical Member",
+    name: "Aryadeep Gogoi",
+    desig: "Junior Design Member",
     insta: "link",
     linkedin: "link"
   },
@@ -56,6 +58,7 @@ const Developers = ({currentUser,setCurrentUser}) => {
 
   return (
     <>
+    <Particle/>
     <Navbar currentUser={currentUser} setCurrentUser={setCurrentUser} />
     <div className="dev-container1"> 
         {devData.map((elem, i) => 

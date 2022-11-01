@@ -8,7 +8,7 @@ export default function CardRayyan({data}) {
     <div className="container">
       <div className="card">
         <div className="content">
-          <img src="http://picsum.photos/200" alt="placeholder" className="prof-pic" />
+          <img src={data.src} alt="placeholder" className="prof-pic" />
           <div className="bottom-container">
 
             <h3>{data.name}</h3>

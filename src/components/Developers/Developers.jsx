@@ -1,8 +1,10 @@
 import React from 'react'
 import CardRayyan from '../CardRayyan/CardRayyan.jsx'
+import Footer from '../Footer/Footer.js'
+import Navbar from '../Navbar/Navbar.jsx'
 import "./developers.css"
 
-const Developers = () => {
+const Developers = ({currentUser,setCurrentUser}) => {
   
   const devData = [
   {
@@ -53,7 +55,8 @@ const Developers = () => {
 
 
   return (
-    
+    <>
+    <Navbar currentUser={currentUser} setCurrentUser={setCurrentUser} />
     <div className="dev-container1"> 
         {devData.map((elem, i) => 
           (<CardRayyan 
@@ -65,6 +68,8 @@ const Developers = () => {
         )}
         
     </div>
+    <Footer/>
+    </>
   )
 }
 

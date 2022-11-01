@@ -1,8 +1,10 @@
 import React from 'react'
 import CardRayyan from '../CardRayyan/CardRayyan.jsx'
+import Footer from '../Footer/Footer.js'
+import Navbar from '../Navbar/Navbar.jsx'
 import "./member.css"
 
-const Member = () => {
+const Member = ({currentUser,setCurrentUser}) => {
 
   const leadData = [
     {
@@ -26,7 +28,7 @@ const Member = () => {
       linkedin: "link"
     },
     {
-      name: "NIshtha Baruah",
+      name: "Nishtha Baruah",
       desig: "Literary and PR Head",
       insta: "link",
       linkedin: "link"
@@ -98,7 +100,7 @@ const Member = () => {
 
   return (
     <>
-
+      <Navbar currentUser={currentUser} setCurrentUser={setCurrentUser} />
       <div className="lead">
       {leadData.map((elem, i) => 
           (<CardRayyan 
@@ -125,6 +127,7 @@ const Member = () => {
           />)
         )}
       </div>
+      <Footer/>
     </>
 
   )

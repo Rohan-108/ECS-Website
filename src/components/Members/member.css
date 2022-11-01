@@ -1,0 +1,36 @@
+.lead{
+    margin-top: 7em !important;
+}
+
+.lead, .seniors, .juniors{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container{
+    margin-bottom: 8rem;
+}
+
+.designation-title{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 900px) {
+    .lead, .seniors, .juniors{
+        width: 100%;
+        font-size: 0.8em;
+    }
+    .container{
+        width: 45%;
+        margin-bottom: 5em;
+    }
+    .designation-title{
+        font-size: 1.7em;
+    }
+}

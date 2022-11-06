@@ -10,7 +10,7 @@
     justify-content: center;
 }
 
-.container{
+.container1{
     margin-bottom: 8rem;
 }
 
@@ -26,7 +26,7 @@
         width: 100%;
         font-size: 0.8em;
     }
-    .container{
+    .container1{
         width: 45%;
         margin-bottom: 5em;
     }

@@ -46,7 +46,11 @@
  .glass_container>p{
     font-size: 1.5rem;
     font-size: 600;
+    transition: all .2s;
  }
+  .glass_container>p:hover{
+        color: #e32dc5;
+  }
  .glassImage>img{
     max-width: 10rem;
     max-height: 15rem;
@@ -204,16 +208,23 @@
   .wrapper .box:hover:before {
       left: 150%;
   }
+  /* #9900ff */
 .button {
         display:inline-block;
         outline: none;
         border: none;
-        background-color: #9900ff;
-        color: #fff;
+        background:transparent;
+        border: 1px solid white;
+        color:whitesmoke;
         border-radius: 5px;
         font-weight: bold;
         font-size: 1rem;
         padding: 10px 16px;
         cursor: pointer;
         z-index: 2;
+        transition: all .5s;
+    }
+    .button:hover{
+        background-color: #9900ff;
+        border: 1px solid #9900ff;
     }

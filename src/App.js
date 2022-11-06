@@ -43,9 +43,27 @@ function App() {
             </Protected>
           }
         />
-        <Route path="/Gallery" element={<Gallery />} />
-        <Route path="/Faq" element={<Faq currentUser={currentUser} />} />
-        <Route path="/Member" element={<Member currentUser={currentUser} />} />
+        <Route
+          path="/Gallery"
+          element={
+            <Gallery
+              currentUser={currentUser}
+              setCurrentUser={setCurrentUser}
+            />
+          }
+        />
+        <Route
+          path="/Faq"
+          element={
+            <Faq currentUser={currentUser} setCurrentUser={setCurrentUser} />
+          }
+        />
+        <Route
+          path="/Member"
+          element={
+            <Member currentUser={currentUser} setCurrentUser={setCurrentUser} />
+          }
+        />
         {/* <Route
           path="/SignUp"
           element={<SignUp setCurrentUser={setCurrentUser} />}

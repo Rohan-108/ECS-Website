@@ -141,7 +141,6 @@
     padding: .5rem;
     height: 25rem;
     width: 20rem;
-    /* background: linear-gradient(180deg, #040036 -1.5%, rgba(25, 0, 95, 0.94) 22.04%, rgba(50, 5, 148, 0.82) 42.48%, rgba(118, 38, 205, 0.765252) 63.05%, rgba(148, 36, 236, 0.67) 85.8%, rgba(76, 16, 111, 0.859997) 95.73%, #450050 102.69%, #1F0027 112.61%); */
     background: radial-gradient(148.14% 148.03% at -37.65% -24.08%, #3D006D 0%, rgba(77, 0, 138, 0) 100%);
     text-align: center;
     border-radius: 5rem;
@@ -200,15 +199,20 @@
     max-width: 6rem;
     outline: none;
     border: none;
-    background-color: #9900ff;
+    background:transparent;
     color: #fff;
+    border: 1px solid whitesmoke;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 1rem;
     padding: 10px 16px;
     width: 100%;
     cursor: pointer;
  }   
+ .button1:hover {
+     background-color: #9900ff;
+     border: 1px solid #9900ff;
+ }
 
  #p1,#p2,#p3,#p4,#p5,#p6{
     height: 180px;

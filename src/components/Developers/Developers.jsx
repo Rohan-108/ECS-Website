@@ -5,6 +5,9 @@ import Navbar from '../Navbar/Navbar.jsx'
 import "./developers.css"
 import Particle from "../Particle"
 import rohan from "../../assets/MemberImage/rohan.jpg"
+import vishnu from "../../assets/MemberImage/vishnu.jpeg"
+import rayyan from "../../assets/MemberImage/rayyan.png"
+import himangshu from "../../assets/MemberImage/himangshu.jpg"
 const Developers = ({currentUser,setCurrentUser}) => {
   
   const devData = [
@@ -12,7 +15,8 @@ const Developers = ({currentUser,setCurrentUser}) => {
     name: "Rayyan Shaikh",
     desig: "Junior Technical Member",
     insta: "link",
-    linkedin: "link"
+    linkedin: "link",
+    src:rayyan
   },
   {
     name: "Rohan Jha",
@@ -25,33 +29,16 @@ const Developers = ({currentUser,setCurrentUser}) => {
     name: "Vishnu Padmakumar",
     desig: "Junior Technical Member",
     insta: "link",
-    linkedin: "link"
+    linkedin: "link",
+    src:vishnu
   },
   {
     name: "Himangshu Sharma",
     desig: "Junior Design Member",
     insta: "link",
-    linkedin: "link"
-  },
-  {
-    name: "Aryadeep Gogoi",
-    desig: "Junior Design Member",
-    insta: "link",
-    linkedin: "link"
-  },
-  {
-    name: "Himangshu Sharma",
-    desig: "Junior Technical Member",
-    insta: "link",
-    linkedin: "link"
-  },
-  {
-    name: "Himangshu Sharma",
-    desig: "Junior Technical Member",
-    insta: "link",
-    linkedin: "link"
-  },
-
+    linkedin: "link",
+    src:himangshu
+  }
   ]
 
 

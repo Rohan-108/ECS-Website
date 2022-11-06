@@ -11,7 +11,11 @@ import bhargab from "../../assets/MemberImage/bhargab.jpeg"
 import sanidhya from "../../assets/MemberImage/sanidhya.jpeg"
 import diptabh from "../../assets/MemberImage/diptabh.jpeg"
 import ananya from "../../assets/MemberImage/ananya.jpeg"
-
+import rohan from "../../assets/MemberImage/rohan.jpg"
+import vishnu from "../../assets/MemberImage/vishnu.jpeg"
+import uttrina from "../../assets/MemberImage/uttrina.jpeg"
+import himangshu from "../../assets/MemberImage/himangshu.jpg"
+import rayyan from "../../assets/MemberImage/rayyan.png"
 const Member = ({currentUser,setCurrentUser}) => {
 
   const leadData = [
@@ -90,6 +94,13 @@ const Member = ({currentUser,setCurrentUser}) => {
       src:aryadeep
     },
     {
+      name: "Himangshu Sharma",
+      desig: "Junior Design Member",
+      insta: "link",
+      linkedin: "link",
+      src:himangshu
+    },
+    {
       name: "Diptabh Medhi",
       desig: "Junior Literary Member",
       insta: "link",
@@ -107,7 +118,29 @@ const Member = ({currentUser,setCurrentUser}) => {
       name: "Uttirna Talukdar",
       desig: "Junior Literary Member",
       insta: "link",
-      linkedin: "link"
+      linkedin: "link",
+      src:uttrina
+    },
+    {
+      name: "Rohan Jha",
+      desig: "Junior Technical Member",
+      insta: "link",
+      linkedin: "link",
+      src:rohan
+    },
+    {
+      name: "Vishnu Padmakumar",
+      desig: "Junior Technical Member",
+      insta: "link",
+      linkedin: "link",
+      src:vishnu,
+    },
+    {
+      name: "Rayyan Shaikh",
+      desig: "Junior Technical Member",
+      insta: "link",
+      linkedin: "link",
+      src:rayyan
     },
   ]
 
@@ -124,7 +157,7 @@ const Member = ({currentUser,setCurrentUser}) => {
           />)
         )}
       </div>
-      <div className="designation-title">Senior Executives</div>
+      <div className="designation-title">Senior Members</div>
       <div className="seniors">
       {senData.map((elem, i) => 
           (<CardRayyan 
@@ -133,7 +166,7 @@ const Member = ({currentUser,setCurrentUser}) => {
           />)
         )}
       </div>
-      <div className="designation-title">Junior Executives</div>
+      <div className="designation-title">Junior Members</div>
       <div className="juniors">
       {junData.map((elem, i) => 
           (<CardRayyan 

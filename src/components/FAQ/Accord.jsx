@@ -5,11 +5,11 @@ const Accord = ({ Question, Answer }) => {
   return (
     <>
       <div className="QAset">
-        <div className="Qset">
+        <div className="Qset" onClick={() => setshow(!show)}>
           <h3 className="faq-click" onClick={() => setshow(!show)}>
-            {show ? "➖" : "➕"}
             {Question}
           </h3>
+          {show ? "➖" : "➕"}
         </div>
         {show && (
           <p className="answers">

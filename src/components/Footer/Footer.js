@@ -26,9 +26,12 @@ const Footer = () => {
           </div>
           <div className="col2">
             <p style={{ fontWeight: 500, color: "black" }}>Contact Us</p>
-            <div>
+            <div className="emailFooter">
               <p style={{ color: "white" }}>
-                Email: ecs.nitsilchar2022@gmail.com
+                Email: 
+              </p>
+              <p style={{color: "white"}}>
+                 ecs.nitsilchar2022@gmail.com
               </p>
             </div>
           </div>

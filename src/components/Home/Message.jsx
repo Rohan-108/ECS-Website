@@ -7,9 +7,9 @@ const Message = (props) => {
   return (
     <div className='message_container'>
         <img src={src} alt="image for people" id='img2s' loading='lazy'/>
-        <div className="mess">{message}</div>
+        <div className="mess" style={{whiteSpace:"pre-line"}}>{message}</div>
         <div className="name_deg">
-            <p>{name}</p>
+            <p >{name}</p>
             <p>-{designation}</p>
         </div>
     </div>

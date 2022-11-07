@@ -4,18 +4,6 @@ import Footer from '../Footer/Footer.js'
 import Navbar from '../Navbar/Navbar.jsx'
 import Particle from '../Particle.js'
 import "./member.css"
-////imports for images//////
-import vibha from "../../assets/MemberImage/vibha.jpeg"
-import aryadeep from "../../assets/MemberImage/aryadeep.jpeg"
-import bhargab from "../../assets/MemberImage/bhargab.jpeg"
-import sanidhya from "../../assets/MemberImage/sanidhya.jpeg"
-import diptabh from "../../assets/MemberImage/diptabh.jpeg"
-import ananya from "../../assets/MemberImage/ananya.jpeg"
-import rohan from "../../assets/MemberImage/rohan.jpg"
-import vishnu from "../../assets/MemberImage/vishnu.jpeg"
-import uttrina from "../../assets/MemberImage/uttrina.jpeg"
-import himangshu from "../../assets/MemberImage/himangshu.jpg"
-import rayyan from "../../assets/MemberImage/rayyan.png"
 const Member = ({currentUser,setCurrentUser}) => {
 
   const leadData = [
@@ -64,21 +52,21 @@ const Member = ({currentUser,setCurrentUser}) => {
       desig: "Junior Executive Member",
       insta: "link",
       linkedin: "link",
-      src:bhargab
+      src:"https://i.ibb.co/qg57b8L/Whats-App-Image-2022-11-01-at-11-43-22-AM.jpg"
     },
     {
       name: "Sanidhya Sinha",
       desig: "Junior Executive Member",
       insta: "link",
       linkedin: "link",
-      src:sanidhya
+      src:"https://i.ibb.co/PTrzXMW/Whats-App-Image-2022-10-30-at-1-24-40-AM.jpg"
     },
     {
       name: "Vibha Garg",
       desig: "Junior Executive Member",
       insta: "link",
       linkedin: "link",
-      src:vibha
+      src:"https://i.ibb.co/QjS3wRJ/Whats-App-Image-2022-11-01-at-10-59-41-AM.jpg"
     },
     {
       name: "Priyambada Hazarika",
@@ -91,56 +79,56 @@ const Member = ({currentUser,setCurrentUser}) => {
       desig: "Junior Design Member",
       insta: "link",
       linkedin: "link",
-      src:aryadeep
+      src:"https://i.ibb.co/LPdBVhG/DSC-0217-01-1.jpg" 
     },
     {
       name: "Himangshu Sharma",
       desig: "Junior Design Member",
       insta: "link",
       linkedin: "link",
-      src:himangshu
+      src:"https://i.ibb.co/jWk9mkG/IMG-20220225-012129-105.jpg"
     },
     {
       name: "Diptabh Medhi",
       desig: "Junior Literary Member",
       insta: "link",
       linkedin: "link",
-      src:diptabh
+      src:"https://i.ibb.co/gSSTZNd/Whats-App-Image-2022-10-30-at-2-56-31-PM.jpg"
     },
     {
       name: "Ananya Chetia",
       desig: "Junior Literary Member",
       insta: "link",
       linkedin: "link",
-      src:ananya
+      src:"https://i.ibb.co/gR29jcj/Whats-App-Image-2022-11-01-at-11-39-13-PM.jpg"
     },
     {
       name: "Uttirna Talukdar",
       desig: "Junior Literary Member",
       insta: "link",
       linkedin: "link",
-      src:uttrina
+      src:"https://i.ibb.co/tq1PGL9/Whats-App-Image-2022-11-06-at-11-40-26-PM.jpg"
     },
     {
       name: "Rohan Jha",
       desig: "Junior Technical Member",
       insta: "link",
       linkedin: "link",
-      src:rohan
+      src:"https://i.ibb.co/ZhppwJ8/IMG-20211110-164910.jpg" 
     },
     {
       name: "Vishnu Padmakumar",
       desig: "Junior Technical Member",
       insta: "link",
       linkedin: "link",
-      src:vishnu,
+      src:"https://i.ibb.co/7zcrkSy/Whats-App-Image-2022-11-03-at-11-31-49-PM.jpg",
     },
     {
       name: "Rayyan Shaikh",
       desig: "Junior Technical Member",
       insta: "link",
       linkedin: "link",
-      src:rayyan
+      src:"https://i.ibb.co/q5WX5D2/pfp1.png" 
     },
   ]
 

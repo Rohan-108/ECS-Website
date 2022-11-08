@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar';
 import Hero from './Hero';
@@ -7,14 +7,12 @@ import Message from './Message';
 import Slider from "react-slick";
 import Polygon from "../../assets/images/Polygon.png"
 import Cards from './Cards';
-import GalleryCard from './GalleryCard';
-import girl from "../../assets/images/girl.jpg"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Particle from '../Particle';
 import Footer from '../Footer/Footer';
+import GallerySlider from './GallerySlider';
 const Home = (props) => {
-  const ref=useRef();
   const{currentUser,setCurrentUser}=props;
       const settings1 = {
       dots: true,
@@ -33,9 +31,9 @@ const Home = (props) => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-     autoplay: true,
-      autoplaySpeed: 2000,
-      cssEase: "linear",
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
     arrows: true,
     responsive: [
       {
@@ -69,18 +67,14 @@ const Home = (props) => {
   return (
     <>
       <Particle />
-      <Navbar currentUser={currentUser} setCurrentUser={setCurrentUser} scollToRef={ref}/>
+      <Navbar currentUser={currentUser} setCurrentUser={setCurrentUser}/>
       <Hero />
       <div className='sliders'>
-        <h2>Message</h2>
+        <h2 style={{letterSpacing:"3px"}}>Message</h2>
         <Slider {...settings1}>
-        <Message message={`"A job handled by 100 individuals can be a mess, but a 100 turned into a team can be the biggest buzz of the century."
-        \n ECS believes in teamwork, unity and integrity and I, being the President of this society, take pride to announce that this website is nothing but another wonderful outcome of collective effort. It's been a privilege to be a part of ECS since the last 3 years and I do feel that taking the baton in my hands, I have faith in my team that they will definitely lead to greater things for ECE and the contemporaries. 
-        As ECS, we have always tried to give out the best of facilities and recreation to the students in the department to keep up with the technical, as well as non-technical deals. We promise to do better and we hope this website will be a guiding light and a storehouse of all one needs. 
-        We have introduced new features which will be really beneficial and will definitely be a deal of pride for the students of ECE. 
-        \nGood luck!
+        <Message message={`"A job handled by 100 individuals can be a mess, but a 100 turned into a team can be the biggest buzz of the century."\n ECS believes in teamwork, unity and integrity and I, being the President of this society, take pride to announce that this website is nothing but another wonderful outcome of collective effort. It's been a privilege to be a part of ECS since the last 3 years and I do feel that taking the baton in my hands, I have faith in my team that they will definitely lead to greater things for ECE and the contemporaries. As ECS, we have always tried to give out the best of facilities and recreation to the students in the department to keep up with the technical, as well as non-technical deals. We promise to do better and we hope this website will be a guiding light and a storehouse of all one needs. We have introduced new features which will be really beneficial and will definitely be a deal of pride for the students of ECE. \nGood luck!
         Long Live, ECS!`
-} name={"Afsana Yasmin"} designation={"President"} src={Polygon}/>
+        } name={"Afsana Yasmin"} designation={"President"} src={Polygon}/>
         <Message message={"ECE is one most active societies of NITS, and I feel privileged to serve as its Vice President for the session 2021-22. As a society, we aim to provide a platform where the students get ample opportunities to explore, learn, and grow in technical as well as non-technical fields. We will continue to work hard and take ECS to greater heights. I would request everyone to make the most out of these opportunities and enhance their skillset. I wish everyone the best of luck for all their future endeavours"} name={"Aryan"} designation={"General Secretary"} src={Polygon}/>
         </Slider>
       </div>
@@ -90,7 +84,7 @@ const Home = (props) => {
         <img src={Polygon} alt="polygon" id='p3' />
         <img src={Polygon} alt="polygon" id='p4' />
         <img src={Polygon} alt="polygon" id='p5' />
-        <h2>About Us</h2>
+        <h2 style={{letterSpacing:"2px"}}>About Us</h2>
         <div className='about_mess'>
           Electronics and Communication society, ECS is known for its activeness and creativity.
           This society stands on the frontline to dig out innovative minds and raw talents.
@@ -99,7 +93,7 @@ const Home = (props) => {
         </div>
       </div>
       <div className="annual" id='annual'>
-        <h2>Annual Attractions</h2>
+        <h2 style={{letterSpacing:"2px"}}>Annual Attractions</h2>
         <Slider {...settings}>
                 <Cards src={Polygon} message={"The technical weekend of ECS, alias Spectrum, is the platform where students are urged to showcase their technical skills and knowledge which is conducted once annually. It nurtures their base and helps them strengthen their skills in a fun way. more..."}
                 ocassion={"Spectre"}/>
@@ -111,14 +105,8 @@ const Home = (props) => {
         </Slider>
       </div>
       <div className="gallery_container">
-        <h2>Gallery</h2>
-        <Slider {...settings}>
-              <GalleryCard src={girl}/>
-              <GalleryCard src={girl} />
-              <GalleryCard src={girl} />
-              <GalleryCard src={girl} />
-              <GalleryCard src={girl} />
-        </Slider>
+        <h2 style={{letterSpacing:"3px",display:"block",marginBottom:"4rem"}}>Gallery</h2>
+        <GallerySlider/>
         <Link className='button1' to="/Gallery">Show More</Link>
       </div>
       <Footer />

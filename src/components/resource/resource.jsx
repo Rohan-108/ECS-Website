@@ -112,7 +112,7 @@ const Resource = (props) => {
     {view && sems.map((e)=>{
       return(
         <GlassCard filename={e.text} setView={setView} id={e.id}
-        setBook={setBook} book={book}/>
+        setBook={setBook} key={e.id} book={book}/>
       )
     })}
     </div>

@@ -1,14 +1,15 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import logo from "../../assets/images/logo.png"
 import login from "../../assets/images/login.png"
 import exit from "../../assets/images/exit.svg"
 import menu from "../../assets/images/menu.svg"
-import { Link } from 'react-router-dom'
+import { Link ,useLocation} from 'react-router-dom'
 import "./navbar.css"
 import Login from "../Modal/Login"
 import SignUp from '../Modal/SignUp';
 import SignOut from '../Modal/SignOut';
 const Navbar = (props) => {
+  let location=useLocation();
   const{currentUser,setCurrentUser}=props;
   const[openLogin,setOpenLogin]=useState(false);
   const[openSignup,setSignup]=useState(false);
@@ -48,10 +49,10 @@ const Navbar = (props) => {
              <Link to="/ResourceHub">Resource Hub</Link>
           </li>}
           <li>
-             <a href="#annual">Annual Attractions</a>
+             {location.pathname!=="/"?<Link to="/">Annual Attractions</Link>:<a href='#annual'>Annual Attractions</a>}
           </li>
           <li>
-             <a href="#about_us">About Us</a>
+             {location.pathname!=="/"?<Link to="/">About Us</Link>:<a href='#about_us'>About Us</a>}
           </li>
           <li>
              <Link to="/Member">Members</Link>

@@ -1,12 +1,11 @@
 import React from 'react'
-import Polygon from "../../assets/images/Polygon.png"
+import rain from "../../assets/images/circuit.svg"
 import "./home.css"
 const Hero = () => {
   return (
-    <div className='hero_section' style={{height:"45vh"}}>
-        <img src={Polygon} alt="polygon" id='poly1' loading='lazy'/>
-        <img src={Polygon} alt="polygon" id='poly2' loading='lazy'/>
-        <img src={Polygon} alt="polygon" id='poly3' loading='lazy'/>
+    <div className='hero_section' style={{height:"75vh"}}>
+      <img src={rain} alt='corcuits' id="circuits"/>
+      <img src={rain} alt='corcuits' id="circuits1"/>
         <div className='heading'>Electronics and Communication Society</div>
         <div className='nit'>NIT Silchar</div>
     </div>

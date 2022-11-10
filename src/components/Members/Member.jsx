@@ -13,6 +13,12 @@ const Member = ({currentUser,setCurrentUser}) => {
       insta: "link",
       linkedin: "link"
     },
+    {
+      name: "Aditya Bhura",
+      desig: "Senior Member",
+      insta: "link",
+      linkedin: "link"
+    },
   ]
   const senData = [
     {
@@ -45,6 +51,18 @@ const Member = ({currentUser,setCurrentUser}) => {
       insta: "link",
       linkedin: "link"
     },
+    {
+      name: "Abhigyan Dandriyal",
+      desig: "Treasurer",
+      insta: "link",
+      linkedin: "link"
+    },
+    {
+      name: "Sneha Das",
+      desig: "Senior Executive",
+      insta: "link",
+      linkedin: "link"
+    }
   ]
   const junData = [
     {

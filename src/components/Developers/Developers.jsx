@@ -34,6 +34,27 @@ const Developers = ({currentUser,setCurrentUser}) => {
     insta: "link",
     linkedin: "link",
     src:"https://i.ibb.co/jWk9mkG/IMG-20220225-012129-105.jpg"
+  },
+  {
+    name: "Aryadeep Gogoi",
+    desig: "Junior Design Member",
+    insta: "link",
+    linkedin: "link",
+    src:"https://i.ibb.co/jWk9mkG/IMG-20220225-012129-105.jpg"
+  },
+  {
+    name: "Jacinth Mahanta",
+    desig: "Junior Design Member",
+    insta: "link",
+    linkedin: "link",
+    src:"https://i.ibb.co/jWk9mkG/IMG-20220225-012129-105.jpg"
+  },
+  {
+    name: "Maharnav",
+    desig: "Junior Design Member",
+    insta: "link",
+    linkedin: "link",
+    src:"https://i.ibb.co/jWk9mkG/IMG-20220225-012129-105.jpg"
   }
   ]
 

@@ -1,12 +1,25 @@
 import React, { useState } from 'react';
 import Slider from "react-slick";
-import girl from "../../assets/images/girl.jpg"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import './Gallerycard.css'
+import chess from "../../assets/galleryImage/DSC_1692.jpg"
+import chess1 from "../../assets/galleryImage/DSC_1698.jpg"
+import fresher from "../../assets/galleryImage/fresher.jpg"
+import mime from "../../assets/galleryImage/mime.jpg"
+import light from "../../assets/galleryImage/light.jpg"
+import guitar from "../../assets/galleryImage/guitar.jpg"
 const GallerySlider = () => {
     const [slideIndex,setSlideIndex]=useState(0);
-    const data=[girl,girl,girl,girl,girl,girl,girl,girl];
+    const data=[
+      "https://i.ibb.co/vzc54hp/Whats-App-Image-2022-11-09-at-9-01-53-PM.jpg",
+      chess,
+      chess1,
+      fresher,
+      mime,
+      guitar,
+      light
+    ];
     const settings2 = {
     dots: true,
     infinite: true,
@@ -24,7 +37,7 @@ const GallerySlider = () => {
       },
       {
         breakpoint: 800,
-        settings: { slidesToShow: 2, slidesToScroll: 1},
+        settings: { slidesToShow: 1, slidesToScroll: 1},
       },
       {
         breakpoint: 1300,

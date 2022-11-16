@@ -4,9 +4,8 @@ import { signInWithEmailAndPassword ,sendPasswordResetEmail} from "firebase/auth
 
 import InputControl from "./InputControl";
 import { auth } from "../../firebase";
-
+import {motion} from "framer-motion"
 import styles from "./Login.module.css";
-import { async } from "@firebase/util";
 
 function Login(props) {
   const {setOpenLogin,setSignup,setCurrentUser}=props;
@@ -61,7 +60,11 @@ function Login(props) {
   }
   return (
     <div className={styles.container}>
-      <div className={styles.innerBox}>
+      <motion.div className={styles.innerBox}
+        initial={{scale:0}}
+        animate={{scale:1}}
+        transition={{duration:.4}}
+      >
         <h1 className={styles.heading}>{forgot?"Reset":"Login"}</h1>
 
         <InputControl
@@ -98,7 +101,7 @@ function Login(props) {
             </span>
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

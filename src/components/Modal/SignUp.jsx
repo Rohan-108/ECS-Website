@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Link, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import { createUserWithEmailAndPassword, updateProfile} from "firebase/auth";
 
 import InputControl from "./InputControl";
 import { auth } from "../../firebase";
-
+import {motion} from "framer-motion"
 import styles from "./SignUp.module.css";
 
 function SignUp(props) {
@@ -62,7 +62,11 @@ function SignUp(props) {
   }
   return (
     <div className={styles.container}>
-      <div className={styles.innerBox}>
+      <motion.div className={styles.innerBox}
+        initial={{scale:0}}
+        animate={{scale:1}}
+        transition={{duration:.4}}
+        >
         <h1 className={styles.heading}>Signup</h1>
 
         <InputControl
@@ -105,7 +109,7 @@ function SignUp(props) {
             </span>
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

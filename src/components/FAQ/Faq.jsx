@@ -17,7 +17,7 @@ const Faq = (props) => {
       <div className="faq">
         <div className="main-faq-div">
           {data.map((curElem) => {
-            const { Id, Question, Answer } = curElem;
+            const { Id} = curElem;
             return <Accord key={Id} {...curElem} />;
           })}
         </div>

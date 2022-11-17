@@ -101,16 +101,18 @@ span{
         letter-spacing: 1px;
         line-height: 5rem;
     }
-
     .nit {
         font-size: 1.2rem;
     }
-
     .hero_section {
         padding: 1rem;
     }
-    #p2,#p3,#p6,#p1,#p4{
-        display: none;
+}
+@media only screen and (max-width:400px) {
+    .heading {
+        font-size: .8rem;
+        letter-spacing: 1px;
+        line-height: 5rem;
     }
 }
 #poly1{
@@ -256,39 +258,3 @@ span{
      background-color: #9900ff;
      border: 1px solid #9900ff;
  }
-
- #p1,#p2,#p3,#p4,#p5,#p6{
-    height: 180px;
-    width: 200px;
-    position: absolute;
- }
- #p1{
-    top: 0;
-    left: 0;
-    transform: rotate(70deg);
-    z-index: 1;
- }
- #p2{
-    top: 1vh;
-    left: 5vw;
-    z-index: 2;
-    transform: rotate(-70deg);
- }
- #p3{
-    top:0;
-    right: 0;
-    transform: rotate(50deg);
-    z-index: 1;
- }
- #p4 {
-     top: 0;
-     right: 5vw;
-     transform: rotate(80deg);
-     z-index: 1;
- }
- #p5{
-    bottom: 0;
-    transform: rotate(-180deg);
-    z-index: 1;
- }
- 

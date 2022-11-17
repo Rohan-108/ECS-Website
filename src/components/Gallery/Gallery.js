@@ -1,6 +1,5 @@
 import React from "react";
 import "../Gallery/Gallery.css";
-import events from "../../assets/images/events.png";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import Textspan from "../Home/Textspan";
@@ -14,6 +13,8 @@ import mime from "../../assets/galleryImage/mime.jpg";
 import wasim from "../../assets/galleryImage/wasim.jpg";
 import unew from "../../assets/galleryImage/u-new.jpeg";
 import bihu from "../../assets/galleryImage/bihu.jpg";
+import dehleez from "../../assets/galleryImage/dehleez.jpeg";
+import dehleez1 from "../../assets/galleryImage/dehleez1.jpeg";
 export default function Gallery(props) {
   const { currentUser, setCurrentUser } = props;
   const mess = "Glimpses Of Us".split("");
@@ -94,12 +95,20 @@ export default function Gallery(props) {
             </div>
             <div className="smallDiv">
               <div className="card">
-                <img className="card-img-top" src={events} alt="Card cap"></img>
+                <img
+                  className="card-img-top"
+                  src={dehleez}
+                  alt="Card cap"
+                ></img>
               </div>
             </div>
             <div className="smallDiv">
               <div className="card">
-                <img className="card-img-top" src={events} alt="Card cap"></img>
+                <img
+                  className="card-img-top"
+                  src={dehleez1}
+                  alt="Card cap"
+                ></img>
               </div>
             </div>
           </div>

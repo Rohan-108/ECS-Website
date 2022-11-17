@@ -8,12 +8,12 @@ const Hero = () => {
   const sentence1 ="NIT Silchar".split("");
   return (
     <div className='hero_section' style={{height:"75vh"}}>
-      {/* <img src={rain} alt='corcuits' id="circuits"/>
-      <img src={rain} alt='corcuits' id="circuits1"/> */}
+       <img src={rain} alt='corcuits' id="circuits"/>
+      <img src={rain} alt='corcuits' id="circuits1"/> 
         <motion.div className='heading'
-        initial={{x:'-100vw'}}
-        animate={{x:0}}
-        transition={{type:'spring',duration:1.8,bounce:0.3}}
+        initial={{opacity:0,scale:0}}
+        animate={{opacity:1,scale:1}}
+        transition={{type:'spring',duration:1.8}}
         >
           {sentence.map((letter,index)=>{
             return(
@@ -24,9 +24,9 @@ const Hero = () => {
           })}
           </motion.div>
         <motion.div className='nit'
-        initial={{x:'100vw'}}
-        animate={{x:0}}
-        transition={{type:'spring',duration:2,bounce:0.3}}
+        initial={{opacity:0,scale:0}}
+        animate={{opacity:1,scale:1}}
+        transition={{type:'spring',duration:2}}
         > 
         {sentence1.map((letter,index)=>{
             return(

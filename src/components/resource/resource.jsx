@@ -49,6 +49,7 @@ import ms401 from "../../assets/ResHubImages/7thSemImg/MS401.jpg"
 /////particle effect
 import Particle from '../Particle'
 import Footer from '../Footer/Footer'
+import {motion}from 'framer-motion'
 const Resource = (props) => {
   const {currentUser,setCurrentUser}=props;
   const [view,setView]=useState(true);
@@ -108,14 +109,17 @@ const Resource = (props) => {
     <div style={{display:'flex',justifyContent:"center",alignItems:"center"}}>
       <img src={Reading} alt="reading" />
     </div>
-    <div className="Glasscard_container">
+    <motion.div className="Glasscard_container"
+     initial={{opacity:0,scale:0}}
+        animate={{opacity:1,scale:1}}
+        transition={{type:'spring',duration:1.8}}>
     {view && sems.map((e)=>{
       return(
         <GlassCard filename={e.text} setView={setView} id={e.id}
         setBook={setBook} key={e.id} book={book}/>
       )
     })}
-    </div>
+    </motion.div>
     {book[0].value &&<div className="cards">
       <div className="wrapper">
         <Book bookName={"MA-101"} src={Ma101} href={"https://drive.google.com/drive/folders/1U049Mmp5HQz9Ru-mVG63STDlG5yBT4ao?usp=sharing"}/>

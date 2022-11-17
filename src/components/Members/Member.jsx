@@ -8,6 +8,8 @@ import afsana from "../../assets/galleryImage/Afsana.jpg"
 import vani from "../../assets/galleryImage/Vani_Goel.jpg"
 import sneha from "../../assets/galleryImage/sneha.jpg"
 import aryan from "../../assets/galleryImage/aryan_batch.jpg"
+import priyambada from "../../assets/galleryImage/priyambada.jpg"
+import {motion} from 'framer-motion'
 const Member = ({currentUser,setCurrentUser}) => {
 
   const leadData = [
@@ -96,7 +98,8 @@ const Member = ({currentUser,setCurrentUser}) => {
       name: "Priyambada Hazarika",
       desig: "Junior Design Member",
       insta: "link",
-      linkedin: "link"
+      linkedin: "link",
+      src:priyambada
     },
     {
       name: "Aryadeep Gogoi",
@@ -161,15 +164,22 @@ const Member = ({currentUser,setCurrentUser}) => {
     <>
       <Particle/>
       <Navbar currentUser={currentUser} setCurrentUser={setCurrentUser} />
-      <div className="lead">
+      <motion.div className="lead" 
+       initial={{opacity:0,scale:0}}
+        animate={{opacity:1,scale:1}}
+        transition={{type:'spring',duration:1.8}}
+        >
       {leadData.map((elem, i) => 
           (<CardRayyan 
           key={i}
           data={elem}
           />)
         )}
-      </div>
-      <div className="designation-title">Senior Members</div>
+      </motion.div>
+      <motion.div className="designation-title"
+       initial={{opacity:0,scale:0}}
+        animate={{opacity:1,scale:1}}
+        transition={{type:'spring',duration:2}}>Senior Members</motion.div>
       <div className="seniors">
       {senData.map((elem, i) => 
           (<CardRayyan 

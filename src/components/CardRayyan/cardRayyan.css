@@ -12,16 +12,12 @@
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
     border-radius: 15px;
      background: rgba(255,255,255,0.1); 
-    /* background: radial-gradient(148.14% 148.03% at -37.65% -24.08%, #3D006D 0%, rgba(77, 0, 138, 0) 100%); */
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid rgba(255,255,255,0.5);
     border-right: 1px solid rgba(255,255,255,0.5);
      backdrop-filter: blur(1px); 
-    /* background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px); */
 
 }
 
@@ -52,8 +48,8 @@
     margin: auto 0;
     padding: 0;
     border-radius: 50%;
-    height: 50%;
-    width: 50%;
+    height: 9rem;
+    width: 9em;
     object-fit: cover;
 }
 
@@ -92,4 +88,10 @@
         height: 30%;
     }
 
+  }
+  @media only screen and (min-width: 900px){
+    .container1 .card1 .content .prof-pic {
+            height: 12rem;
+            width: 12em;
+        }
   }

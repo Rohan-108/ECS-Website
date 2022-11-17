@@ -82,11 +82,6 @@ const Home = (props) => {
         </Slider>
       </div>
       <div className='about_us' id="about_us">
-        <img src={Polygon} alt="polygon" id='p1' />
-        <img src={Polygon} alt="polygon" id='p2' />
-        <img src={Polygon} alt="polygon" id='p3' />
-        <img src={Polygon} alt="polygon" id='p4' />
-        <img src={Polygon} alt="polygon" id='p5' />
         <h2 style={{letterSpacing:"2px"}}>About Us</h2>
         <div className='about_mess'>
          The Electronics and Communication Society,ECS, is one of the  active societies of NIT Silchar , whose main goal is to care for the general development of the students, particularly those in the ECE branch. It gives upcoming talented minds a platform to display their intellectual, technical, and artistic prowess.It helps the newcomers adjust to the course and develop positive relationships with the seniors, through several interactive sessions.

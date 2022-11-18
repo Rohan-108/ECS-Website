@@ -4,6 +4,7 @@ import "./Resource.css"
 import GlassCard from './GlassCard'
 import Reading from "../../assets/images/reading.svg"
 import Book from './Book'
+import folders from '../../assets/images/folders.png'
 ///importing photo for 1sem
 import Ma101 from "../../assets/ResHubImages/1stSemImg/ma101.jpeg"
 import ch101 from "../../assets/ResHubImages/1stSemImg/ch101.jpg"
@@ -116,7 +117,7 @@ const Resource = (props) => {
     {view && sems.map((e)=>{
       return(
         <GlassCard filename={e.text} setView={setView} id={e.id}
-        setBook={setBook} key={e.id} book={book}/>
+        setBook={setBook} src={folders}key={e.id} book={book}/>
       )
     })}
     </motion.div>

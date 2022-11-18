@@ -1,6 +1,6 @@
 import React from 'react'
 
-const GlassCard = ({id,filename,setView,setBook,book}) => {
+const GlassCard = ({src,id,filename,setView,setBook,book}) => {
     const handleclick=()=>{
         setView(false);
         const newBook=book.map(obj=>{
@@ -13,6 +13,7 @@ const GlassCard = ({id,filename,setView,setBook,book}) => {
     }
   return (
     <div className='glass_container'>
+        <img src={src} alt="folder" />
         <p onClick={handleclick} style={{cursor:"pointer"}}>{filename}</p>
     </div>
   )

@@ -208,6 +208,12 @@ span{
     text-align: center;
     border-radius: 5rem;
 }
+@media only screen and (max-width:400px){
+    .card_container{
+        width: 17rem;
+        height: 27rem;
+    }
+}
 .card_container>p{
     color:whitesmoke;
     font-weight: 500;

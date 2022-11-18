@@ -11,10 +11,13 @@ import guitar from "../../assets/galleryImage/guitar.jpg";
 import light from "../../assets/galleryImage/light.jpg";
 import mime from "../../assets/galleryImage/mime.jpg";
 import wasim from "../../assets/galleryImage/wasim.jpg";
-import unew from "../../assets/galleryImage/u-new.jpeg";
+import unew from "../../assets/galleryImage/dancer.jpg";
 import bihu from "../../assets/galleryImage/bihu.jpg";
 import dehleez from "../../assets/galleryImage/dehleez.jpeg";
 import dehleez1 from "../../assets/galleryImage/dehleez1.jpeg";
+import fresher1 from "../../assets/galleryImage/fresher1.jpg";
+import girlDraw from "../../assets/galleryImage/girlDraw.jpg";
+import new1 from "../../assets/galleryImage/new1.jpg";
 export default function Gallery(props) {
   const { currentUser, setCurrentUser } = props;
   const mess = "Glimpses Of Us".split("");
@@ -109,6 +112,29 @@ export default function Gallery(props) {
                   src={dehleez1}
                   alt="Card cap"
                 ></img>
+              </div>
+            </div>
+            <div className="smallDiv">
+              <div className="card">
+                <img
+                  className="card-img-top"
+                  src={girlDraw}
+                  alt="Card cap"
+                ></img>
+              </div>
+            </div>
+            <div className="smallDiv">
+              <div className="card">
+                <img
+                  className="card-img-top"
+                  src={fresher1}
+                  alt="Card cap"
+                ></img>
+              </div>
+            </div>
+            <div className="smallDiv">
+              <div className="card">
+                <img className="card-img-top" src={new1} alt="Card cap"></img>
               </div>
             </div>
           </div>

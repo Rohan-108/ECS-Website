@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Gallerycard.css'
 import chess from "../../assets/galleryImage/DSC_1692.jpg"
-import chess1 from "../../assets/galleryImage/DSC_1698.jpg"
+import dancer from "../../assets/galleryImage/dancer.jpg"
 import fresher from "../../assets/galleryImage/fresher.jpg"
 import mime from "../../assets/galleryImage/mime.jpg"
 import light from "../../assets/galleryImage/light.jpg"
@@ -14,7 +14,7 @@ const GallerySlider = () => {
     const data=[
       "https://i.ibb.co/vzc54hp/Whats-App-Image-2022-11-09-at-9-01-53-PM.jpg",
       chess,
-      chess1,
+      dancer,
       fresher,
       mime,
       guitar,

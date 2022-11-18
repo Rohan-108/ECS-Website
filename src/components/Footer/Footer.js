@@ -19,20 +19,22 @@ const Footer = () => {
                 gap: "1rem",
               }}
             >
-              <Link to="/ResourceHub">Resource Hub</Link>
-              <a href="#">Message</a>
-              <a href="#">Annual Attractions</a>
+              <Link className="linkss" to="/ResourceHub">
+                Resource Hub
+              </Link>
+              <a href="#about_us" className="linkss">
+                Message
+              </a>
+              <a href="#annual" className="linkss">
+                Annual Attractions
+              </a>
             </div>
           </div>
           <div className="col2">
             <p style={{ fontWeight: 500, color: "black" }}>Contact Us</p>
             <div className="emailFooter">
-              <p style={{ color: "white" }}>
-                Email: 
-              </p>
-              <p style={{color: "white"}}>
-                 ecs.nitsilchar2022@gmail.com
-              </p>
+              <p style={{ color: "white" }}>Email:</p>
+              <p style={{ color: "white" }}>ecs.nitsilchar2023@gmail.com</p>
             </div>
           </div>
           <div className="col3">
@@ -47,9 +49,15 @@ const Footer = () => {
                 gap: "1rem",
               }}
             >
-              <a href="#">Message</a>
-              <Link to="/Member">Members</Link>
-              <Link to="/Gallery">Gallery</Link>
+              <Link to="/" className="linkss">
+                Home
+              </Link>
+              <Link className="linkss" to="/Member">
+                Members
+              </Link>
+              <Link className="linkss" to="/Gallery">
+                Gallery
+              </Link>
             </div>
           </div>
         </div>

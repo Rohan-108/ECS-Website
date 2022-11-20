@@ -14,6 +14,9 @@ import Footer from '../Footer/Footer';
 import GallerySlider from './GallerySlider';
 import afsana from "../../assets/galleryImage/Afsana.jpg"
 import aryan_batch from "../../assets/galleryImage/aryan_batch.jpg"
+import dehleez from '../../assets/galleryImage/dehleez.jpeg'
+import fresher from '../../assets/galleryImage/fresher.jpg'
+import light from '../../assets/galleryImage/light.jpg'
 const Home = (props) => {
   const{currentUser,setCurrentUser}=props;
       const settings1 = {
@@ -90,13 +93,13 @@ const Home = (props) => {
       <div className="annual" id='annual'>
         <h2 style={{letterSpacing:"2px"}}>Annual Attractions</h2>
         <Slider {...settings}>
-                <Cards src={Polygon} message={"The new members of the Electronics and Communication Department are cordially welcomed by ECS. The numerous facets of the branch, the faculties, and the various events that the society has planned for them are introduced to the newcomers. Freshmen are given the chance to clear any query they may have about the branch."}
+                <Cards src={light} message={"The new members of the ECE Department are cordially welcomed by ECS. The numerous facets of the branch, the faculties, and the various events that the society has planned for them are introduced to the newcomers. Freshmen are given the chance to clear any query they may have about the branch."}
                 ocassion={"Orientation"}/>
                 <Cards ocassion={'Spectrum'} message={"Spectrum is the annual branch fest of ECE organised to foster the technical and artistic traits in the students .To display a variety of skills, coding competitions, hackathons, literary contests, photography competitions, poster competitions, and many more amusing competitions are organised."}
-                src={Polygon}/>
+                src={fresher}/>
                 <Cards src={Polygon} message={"The departmental bulletin for ECE, which is published yearly, is a storehouse of knowledge on the branch. It records every occurrence that takes place during the year. The poets, writers, and painters have the opportunity to showcase their untapped ability."}
                 ocassion={"Spectre"}/>
-                <Cards message={"We say adieu in style. Final-year seniors leave the college in a fun and memorable way by walking through Dahleez. Dahleez, the ECE branch farewell, gives  the seniors a chance to reconcile their exciting college journey."} ocassion={"Dehleez"} src={Polygon}/>
+                <Cards message={"We say adieu in style. Final-year seniors leave the college in a fun and memorable way by walking through Dahleez. Dahleez, the ECE branch farewell, gives  the seniors a chance to reconcile their exciting college journey."} ocassion={"Dehleez"} src={dehleez}/>
         </Slider>
       </div>
       <div className="gallery_container">

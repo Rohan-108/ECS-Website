@@ -7,7 +7,13 @@ import Particle from "../Particle"
 import maharav from '../../assets/galleryImage/maharav.jpeg'
 import {motion}from 'framer-motion'
 const Developers = ({currentUser,setCurrentUser}) => {
-  
+  const dataAbhinav={
+    name:"Abhinav Ghosh",
+    desig:"Technical Head",
+    insta:"link",
+    linkedin:"link",
+    src:"https://i.ibb.co/NSQW2PN/Whats-App-Image-2022-11-08-at-12-58-15-AM.jpg"
+  }
   const devData = [
   {
     name: "Rayyan Shaikh",
@@ -63,6 +69,12 @@ const Developers = ({currentUser,setCurrentUser}) => {
     <>
     <Particle/>
     <Navbar currentUser={currentUser} setCurrentUser={setCurrentUser} />
+    <motion.div initial={{opacity:0,scale:0}}
+        animate={{opacity:1,scale:1}}
+        transition={{type:'spring',duration:1.8}}style={{display:"flex",justifyContent:"center",alignItems:"center",marginTop:"2rem",marginBottom:"-5rem"}}>
+        <CardRayyan 
+          data={dataAbhinav}/>
+    </motion.div>
     <motion.div className="dev-container1"
      initial={{opacity:0,scale:0}}
         animate={{opacity:1,scale:1}}

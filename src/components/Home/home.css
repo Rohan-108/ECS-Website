@@ -1,4 +1,18 @@
-
+#lines{
+    position: absolute;
+    z-index: -5;
+   width: 20rem;
+   top: 35%;
+   left: -5rem;
+}
+#lines1{
+    position: absolute;
+    z-index: -5;
+    width: 20rem;
+    transform: scaleX(-1);
+    top:35%;
+    right: -5rem;
+}
 span{
     display: inline-block;
 }
@@ -12,42 +26,18 @@ span{
     flex-direction: column;
     background: none;
 }
-#circuits{
-    position:absolute;
-    z-index: -10;
-}
-#circuits1{
-    position: absolute;
-        z-index: -10;
-    display: none;
-}
-@media only screen and (min-width:900px){
-    #circuits{
-        height:40rem;
-        width:40rem;
-        right: -30%;
-    }
-    #circuits1{
-        display: block;
-        height:40rem;
-        width:40rem;
-        transform: scaleX(-1);
-        left: -30%;
+@media only screen and (min-width:1000px){
+    #lines,#lines1{
+        top:30%;
+        width: 30rem;
     }
 }
 @media only screen and (min-width:1200px){
-    #circuits{
-        height:50rem;
-        width:50rem;
-        right: -30%;
-    }
-    #circuits1{
-        display: block;
-        height:50rem;
-        width:50rem;
-        transform: scaleX(-1);
-        left: -30%;
-    }
+         #lines,
+         #lines1 {
+             top: 18%;
+             width: 40rem;
+         }
 }
 .heading{
     display: block;
@@ -202,7 +192,7 @@ span{
     margin-top: 3rem;
     margin-inline: auto;
     padding: .5rem;
-    height: 26rem;
+    height: 30rem;
     width: 20rem;
     background: radial-gradient(148.14% 148.03% at -37.65% -24.08%, #3D006D 0%, rgba(77, 0, 138, 0) 100%);
     text-align: center;
@@ -211,19 +201,25 @@ span{
 @media only screen and (max-width:400px){
     .card_container{
         width: 17rem;
-        height: 27rem;
+        height: 31rem;
+        padding: .3rem;
+        border-radius: 2rem;
+    }
+    .card_container>p{
+        font-size: 1rem;
     }
 }
 .card_container>p{
     color:whitesmoke;
     font-weight: 500;
     text-transform: capitalize;
-    font-weight: 500;
     font-size: 1.2rem;
 }
 #imgS1{
-    height:5rem;
+    height:10rem;
     width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 .messs{
     z-index: 10;

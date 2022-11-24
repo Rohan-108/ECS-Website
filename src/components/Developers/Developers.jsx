@@ -5,6 +5,7 @@ import Navbar from '../Navbar/Navbar.jsx'
 import "./developers.css"
 import Particle from "../Particle"
 import maharav from '../../assets/galleryImage/maharav.jpeg'
+import jacinth from '../../assets/galleryImage/jacinth.jpeg'
 import {motion}from 'framer-motion'
 const Developers = ({currentUser,setCurrentUser}) => {
   const dataAbhinav={
@@ -55,7 +56,7 @@ const Developers = ({currentUser,setCurrentUser}) => {
     desig: "Junior Design Member",
     insta: "link",
     linkedin: "link",
-    src:"https://i.ibb.co/jWk9mkG/IMG-20220225-012129-105.jpg"
+    src:jacinth
   },
   {
     name: "Maharnav",

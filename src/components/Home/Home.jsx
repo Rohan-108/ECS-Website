@@ -5,7 +5,6 @@ import Hero from './Hero';
 import "./home.css"
 import Message from './Message';
 import Slider from "react-slick";
-import Polygon from "../../assets/images/Polygon.png"
 import Cards from './Cards';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -17,6 +16,7 @@ import aryan_batch from "../../assets/galleryImage/aryan_batch.jpg"
 import dehleez from '../../assets/galleryImage/dehleez.jpeg'
 import fresher from '../../assets/galleryImage/fresher.jpg'
 import light from '../../assets/galleryImage/light.jpg'
+import spectre from '../../assets/galleryImage/spectre.jpeg'
 const Home = (props) => {
   const{currentUser,setCurrentUser}=props;
       const settings1 = {
@@ -97,7 +97,7 @@ const Home = (props) => {
                 ocassion={"Orientation"}/>
                 <Cards ocassion={'Spectrum'} message={"Spectrum is the annual branch fest of ECE organised to foster the technical and artistic traits in the students .To display a variety of skills, coding competitions, hackathons, literary contests, photography competitions, poster competitions, and many more amusing competitions are organised."}
                 src={fresher}/>
-                <Cards src={Polygon} message={"The departmental bulletin for ECE, which is published yearly, is a storehouse of knowledge on the branch. It records every occurrence that takes place during the year. The poets, writers, and painters have the opportunity to showcase their untapped ability."}
+                <Cards src={spectre} message={"The departmental bulletin for ECE, which is published yearly, is a storehouse of knowledge on the branch. It records every occurrence that takes place during the year. The poets, writers, and painters have the opportunity to showcase their untapped ability."}
                 ocassion={"Spectre"}/>
                 <Cards message={"We say adieu in style. Final-year seniors leave the college in a fun and memorable way by walking through Dahleez. Dahleez, the ECE branch farewell, gives  the seniors a chance to reconcile their exciting college journey."} ocassion={"Dehleez"} src={dehleez}/>
         </Slider>

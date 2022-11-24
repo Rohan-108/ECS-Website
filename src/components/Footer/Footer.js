@@ -34,7 +34,7 @@ const Footer = () => {
             <p style={{ fontWeight: 500, color: "black" }}>Contact Us</p>
             <div className="emailFooter">
               <p style={{ color: "white" }}>Email:</p>
-              <p style={{ color: "white" }}>ecs.nitsilchar2023@gmail.com</p>
+              <a href="mailto:ecs.nitsilchar2023@gmail.com" style={{ color: "white" }}>ecs.nitsilchar2023@gmail.com</a>
             </div>
           </div>
           <div className="col3">

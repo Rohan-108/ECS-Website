@@ -81,7 +81,10 @@ const Home = (props) => {
         Good luck!
         Long Live, ECS!`
         } name={"Afsana Yasmin"} designation={"President"} src={afsana}/>
-        <Message message={"ECE is one most active societies of NITS, and I feel privileged to serve as its Vice President for the session 2021-22. As a society, we aim to provide a platform where the students get ample opportunities to explore, learn, and grow in technical as well as non-technical fields. We will continue to work hard and take ECS to greater heights. I would request everyone to make the most out of these opportunities and enhance their skillset. I wish everyone the best of luck for all their future endeavours"} name={"Aaryan"} designation={"General Secretary"} src={aryan_batch}/>
+        <Message message={"ECS is one of the most active societies in the college, and I am humbled to be the general secretary of this awesome society. As a society, we aim to provide a platform where the students get ample opportunities to explore, learn, and grow in technical as well as non-technical fields.It is with the constant dedication and hard work of my seniors that ECS stands at such high standards, and I am sure the standards are going to increase with every passing year. I wish everyone the best of luck for their future and encourage everyone to keep learning, whichever phase of life they are in."} name={"Aaryan"} designation={"General Secretary"} src={aryan_batch}/>
+        <Message message={`"It is of great pleasure to be a part of ECS for the past 3 years and to watch the society grow. It has consistently  worked hard to highlight the students' technical, academic, and artistic qualities by organising various events and competitions. Wishing every student of the department a great journey ahead and I hope everyone will utilise the opportunities provided by the  society and give their best.\n \nSince "none of us is as smart as all of us," let's join hands towards the overall growth of the ECE department of the college.
+        Long live ECS!!`
+        } name={"Aditya Bhura"} designation={"Senior Member"} src={"https://i.ibb.co/0Dwq6cC/aditya.jpg"}/>
         </Slider>
       </div>
       <div className='about_us' id="about_us">

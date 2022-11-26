@@ -18,49 +18,49 @@ const Developers = ({currentUser,setCurrentUser}) => {
   const devData = [
   {
     name: "Rayyan Shaikh",
-    desig: "Junior Technical Member",
+    desig: "Developer",
     insta: "link",
     linkedin: "link",
     src:"https://i.ibb.co/q5WX5D2/pfp1.png" 
   },
   {
     name: "Rohan Jha",
-    desig: "Junior Technical Member",
+    desig: "Developer",
     insta: "link",
     linkedin: "link",
     src:"https://i.ibb.co/ZhppwJ8/IMG-20211110-164910.jpg" 
   },
   {
     name: "Vishnu Padmakumar",
-    desig: "Junior Technical Member",
+    desig: "Developer",
     insta: "link",
     linkedin: "link",
     src:"https://i.ibb.co/7zcrkSy/Whats-App-Image-2022-11-03-at-11-31-49-PM.jpg",
   },
   {
     name: "Himangshu Sharma",
-    desig: "Junior Design Member",
+    desig: "Developer",
     insta: "link",
     linkedin: "link",
     src:"https://i.ibb.co/jWk9mkG/IMG-20220225-012129-105.jpg"
   },
   {
     name: "Aryadeep Gogoi",
-    desig: "Junior Design Member",
+    desig: "UI/UX",
     insta: "link",
     linkedin: "link",
     src:"https://i.ibb.co/LPdBVhG/DSC-0217-01-1.jpg"
   },
   {
     name: "Jacinth Mahanta",
-    desig: "Junior Design Member",
+    desig: "UI/UX",
     insta: "link",
     linkedin: "link",
     src:jacinth
   },
   {
     name: "Maharnav",
-    desig: "Junior Design Member",
+    desig: "UI/UX",
     insta: "link",
     linkedin: "link",
     src:maharav

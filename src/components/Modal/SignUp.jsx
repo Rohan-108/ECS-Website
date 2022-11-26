@@ -11,6 +11,7 @@ function SignUp(props) {
   //const history=useHistory();
   const {setCurrentUser,setSignup,setOpenLogin}=props;
   const navigate = useNavigate();
+  const [show,setShow]=useState("show")
   const [values, setValues] = useState({//function to setup form details
     name: "",
     email: "",
@@ -91,9 +92,9 @@ function SignUp(props) {
           onChange={(event) =>
             setValues((prev) => ({ ...prev, pass: event.target.value }))
           }
-          type={"password"}
+          type={show!=="show"?"text":"password"}
         />
-
+         {values.pass.length>1 && <p onClick={()=>setShow(show==="show"?"Hide":"show")} style={{position:"absolute",top:"60%",fontSize:"14px",textDecoration:"underline",cursor:"pointer"}}>{show} password</p>}
         <div className={styles.footer}>
           <b className={styles.error}>{errorMsg}</b>
           <button onClick={handleSubmission} disabled={submitButtonDisabled}>

@@ -9,6 +9,7 @@ import vani from "../../assets/galleryImage/Vani_Goel.jpg"
 import sneha from "../../assets/galleryImage/sneha.jpg"
 import aryan from "../../assets/galleryImage/aryan_batch.jpg"
 import priyambada from "../../assets/galleryImage/priyambada.jpg"
+import bhargab from "../../assets/galleryImage/bhargab.jpeg"
 import {motion} from 'framer-motion'
 const Member = ({currentUser,setCurrentUser}) => {
 
@@ -78,7 +79,7 @@ const Member = ({currentUser,setCurrentUser}) => {
       desig: "Junior Executive Member",
       insta: "link",
       linkedin: "link",
-      src:"https://i.ibb.co/qg57b8L/Whats-App-Image-2022-11-01-at-11-43-22-AM.jpg"
+      src:bhargab
     },
     {
       name: "Sanidhya Sinha",

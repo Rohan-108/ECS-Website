@@ -104,6 +104,9 @@ span{
         letter-spacing: 1px;
         line-height: 5rem;
     }
+         .nit {
+             font-size: 1rem;
+         }
 }
 #poly1{
     position: absolute;

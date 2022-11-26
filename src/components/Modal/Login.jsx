@@ -14,6 +14,7 @@ function Login(props) {
     email: "",
     pass: "",
   });
+  const [show,setShow]=useState("show");
   const [errorMsg, setErrorMsg] = useState("");
   const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
   const [forgot,setForgot]=useState(false);
@@ -81,11 +82,12 @@ function Login(props) {
             setValues((prev) => ({ ...prev, pass: event.target.value }))
           }
           placeholder="Enter Password"
-          type="password"
+          type={show!=="show"?"text":"password"}
         />
         }
-         {!forgot &&<p onClick={()=>{setForgot(true)}}style={{position:"absolute",top:"53%",fontSize:"14px",textDecoration:"underline",cursor:"pointer"}}>Forgot Password?</p>
-        }
+         {!forgot &&<p onClick={()=>{setForgot(true);values.pass=""}}style={{position:"absolute",top:"53%",left:"57%",fontSize:"14px",textDecoration:"underline",cursor:"pointer"}}>Forgot Password?</p>
+          }
+              {values.pass.length>1 && <p onClick={()=>setShow(show==="show"?"Hide":"show")} style={{position:"absolute",top:"53%",fontSize:"14px",textDecoration:"underline",cursor:"pointer"}}>{show} password</p>}
         <div className={styles.footer}>
           <b className={styles.error}>{errorMsg}</b>
           <button disabled={submitButtonDisabled} onClick={handleSubmission}>

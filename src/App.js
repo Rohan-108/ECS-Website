@@ -6,7 +6,7 @@ import { useState } from "react";
 import Developers from "./components/Developers/Developers";
 import Faq from "./components/FAQ/Faq";
 import Member from "./components/Members/Member";
-import Resource from "./components/resource/resource";
+import Resource from "./components/resource/Resource";
 import Gallery from "./components/Gallery/Gallery";
 import Protected from "./Protected";
 function App() {

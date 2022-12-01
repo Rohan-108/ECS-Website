@@ -4,7 +4,7 @@ import Footer from '../Footer/Footer.js'
 import Navbar from '../Navbar/Navbar.jsx'
 import Particle from '../Particle.js'
 import "./member.css"
-import afsana from "../../assets/galleryImage/Afsana.jpg"
+import afsana from "../../assets/galleryImage/Afsana.jpeg"
 import vani from "../../assets/galleryImage/Vani_Goel.jpg"
 import sneha from "../../assets/galleryImage/sneha.jpg"
 import aryan from "../../assets/galleryImage/aryan_batch.jpg"

@@ -11,10 +11,12 @@ import "slick-carousel/slick/slick-theme.css";
 import Particle from '../Particle';
 import Footer from '../Footer/Footer';
 import GallerySlider from './GallerySlider';
-import afsana from "../../assets/galleryImage/Afsana.jpg"
+import afsana from "../../assets/galleryImage/Afsana.jpeg"
+import fresher from "../../assets/galleryImage/fresher.jpg"
 import aryan_batch from "../../assets/galleryImage/aryan_batch.jpg"
+import wasim from "../../assets/galleryImage/wasim.jpg"
 import dehleez from '../../assets/galleryImage/dehleez.jpeg'
-import fresher from '../../assets/galleryImage/fresher.jpg'
+import rabul from '../../assets/galleryImage/rabul.jpeg'
 import light from '../../assets/galleryImage/light.jpg'
 import spectre from '../../assets/galleryImage/spectre.jpeg'
 const Home = (props) => {
@@ -77,6 +79,7 @@ const Home = (props) => {
       <div className='sliders'>
         <h2 style={{letterSpacing:"3px"}}>Message</h2>
         <Slider {...settings1}>
+        <Message message={`Another year has passed, and another batch of new freshmen has arrived at this wonderful institution. The alumni of this respected and reputed institution, NIT, Silchar, especially from the Electronics and Communication Engineering department, have already brought laurels to our institute after their graduation. I am confident that, like our successful graduates, the freshmen will have a pleasant and successful tenure here at NIT Silchar.\nSo gear up and make yourself as a resource that  future is looking for. Keep doing good work, participate in co-currcular activities, build your network and grow. Stay happy and keep shining!`} name={"Dr. Wasim arif"} designation={"Faculty Advisor"} src={wasim}/>  
         <Message message={`"A job handled by 100 individuals can be a mess, but a 100 turned into a team can be the biggest buzz of the century."\nIt's been a privilege to be a part of ECS since the last 3 years and I do feel that taking the baton in my hands, I have faith in my team that they will definitely lead to greater things for ECE and the contemporaries. We promise to do better and we hope this website will be a guiding light and a storehouse of all one needs. We have introduced new features which will be really beneficial and will definitely be a deal of pride for the students of ECE. \n
         Good luck!
         Long Live, ECS!`
@@ -85,6 +88,8 @@ const Home = (props) => {
         <Message message={`"It is of great pleasure to be a part of ECS for the past 3 years and to watch the society grow. It has consistently  worked hard to highlight the students' technical, academic, and artistic qualities by organising various events and competitions. Wishing every student of the department a great journey ahead and I hope everyone will utilise the opportunities provided by the  society and give their best.\n \nSince "none of us is as smart as all of us," let's join hands towards the overall growth of the ECE department of the college.
         Long live ECS!!`
         } name={"Aditya Bhura"} designation={"Senior Member"} src={"https://i.ibb.co/0Dwq6cC/aditya.jpg"}/>
+        <Message message={"Ece students have consistently demonstrated brilliance in a range of fields and made usproud.The efforts and arduous work of our pupils are evident in this website.I hope everyone will utilise the website to its fullest potential. Dear students, keep developing and honing your abilities. \nWishing everyone a successful future."}
+        designation={"HOD"} name={"Rabbul Hussain Laskar"} src={rabul}/>
         </Slider>
       </div>
       <div className='about_us' id="about_us">

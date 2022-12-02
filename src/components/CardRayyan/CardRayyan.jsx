@@ -15,8 +15,8 @@ export default function CardRayyan({data}) {
             <p>{data.desig}</p>
             <div className="linksR">
 
-              <a href={data.insta} target="_blank"><img src={facebook} alt="insta" className="soc-icon" loading='lazy'/></a>
-              <a href={data.linkedin} target="_blank"><img src={linkedin} alt="twitter" className="soc-icon" loading="lazy"/></a>
+              <a href={data.insta} target="_blank" rel="noreferrer"><img src={facebook} alt="insta" className="soc-icon" loading='lazy'/></a>
+              <a href={data.linkedin} target="_blank" rel="noreferrer"><img src={linkedin} alt="twitter" className="soc-icon" loading="lazy"/></a>
             </div>
           </div>
         </div>

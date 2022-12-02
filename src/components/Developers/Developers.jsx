@@ -18,28 +18,28 @@ const Developers = ({ currentUser, setCurrentUser }) => {
   const devData = [
     {
       name: "Rayyan Shaikh",
-      desig: "Junior Technical Member",
+      desig: "Developer",
       insta: "https://www.facebook.com/rayyan.shaikh.71868/",
       linkedin: "https://www.linkedin.com/in/rayyan-shaikh-a51581129/",
       src: "https://i.ibb.co/q5WX5D2/pfp1.png"
     },
     {
       name: "Rohan Jha",
-      desig: "Junior Technical Member",
+      desig: "Developer",
       insta: "https://www.facebook.com/profile.php?id=100010061770737",
       linkedin: "https://www.linkedin.com/in/rohan-jha-ab635322b/",
       src: "https://i.ibb.co/ZhppwJ8/IMG-20211110-164910.jpg"
     },
     {
       name: "Vishnu Padmakumar",
-      desig: "Junior Technical Member",
+      desig: "Developer",
       insta: "https://www.facebook.com/profile.php?id=100075797247014&mibextid=ZbWKwL",
       linkedin: "https://www.linkedin.com/in/vishnu-padmakumar-8515ba22a",
       src: "https://i.ibb.co/7zcrkSy/Whats-App-Image-2022-11-03-at-11-31-49-PM.jpg",
     },
     {
       name: "Himangshu Sharma",
-      desig: "Junior Design Member",
+      desig: "Developer",
       insta: "https://www.facebook.com/himangshu.sarma.54379236",
       linkedin: "https://www.linkedin.com/in/himangshu-sarma-34813722a",
       src: "https://i.ibb.co/jWk9mkG/IMG-20220225-012129-105.jpg"

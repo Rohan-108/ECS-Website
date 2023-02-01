@@ -9,6 +9,7 @@ import Member from "./components/Members/Member";
 import Resource from "./components/resource/Resource";
 import Gallery from "./components/Gallery/Gallery";
 import Protected from "./Protected";
+import Spectrum from "./components/spectrum/Spectrum";
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
   onAuthStateChanged(auth, (user) => {
@@ -62,6 +63,15 @@ function App() {
           path="/Member"
           element={
             <Member currentUser={currentUser} setCurrentUser={setCurrentUser} />
+          }
+        />
+        <Route
+          path="/Spectrum"
+          element={
+            <Spectrum
+              currentUser={currentUser}
+              setCurrentUser={setCurrentUser}
+            />
           }
         />
         {/* <Route

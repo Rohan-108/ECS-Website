@@ -1,0 +1,40 @@
+.posterContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.poster{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 30rem;
+    gap: 2rem;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(1px);
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+}
+.posterImg{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.posterImg>img{
+    align-self: center;
+    width: 90%;
+    object-fit: cover;
+}
+.posterAbout{
+    padding: 1rem;
+}
+.posterAbout>p{
+    font-size: 1rem;
+    color: whitesmoke;
+    display: block;
+    font-family: Poppins;
+}

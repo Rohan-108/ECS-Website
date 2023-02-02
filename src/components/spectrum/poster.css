@@ -4,12 +4,14 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    margin-inline: 5vw;
+    margin-top: 5rem;
 }
 .poster{
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 30rem;
+    max-width: 35rem;
     gap: 2rem;
     flex-direction: column;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -34,7 +36,8 @@
 }
 .posterAbout>p{
     font-size: 1rem;
-    color: whitesmoke;
+    color: black;
     display: block;
+    font-weight: 400;
     font-family: Poppins;
 }

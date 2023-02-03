@@ -14,12 +14,26 @@ import smartdroid from "../../assets/galleryImage/smartdroid.jpeg";
 import fastWeb from "../../assets/galleryImage/fastWeb.jpeg";
 import getHired from "../../assets/galleryImage/getHired.jpeg";
 import knock from "../../assets/galleryImage/knock.jpeg";
+import arduino from "../../assets/galleryImage/arduino.png";
+import electro from "../../assets/galleryImage/electro.png";
+import chamber from "../../assets/galleryImage/chamber.jpeg";
 import "./spectrum.css";
 const Spectrum = (props) => {
   const [slideIndex, setSlideIndex] = useState(0);
   const { currentUser, setCurrentUser } = props;
   const sentence = "Spectrum 9.0".split("");
-  const data = [poesis, moments, ipl, smartdroid, fastWeb, getHired, knock];
+  const data = [
+    poesis,
+    moments,
+    ipl,
+    smartdroid,
+    fastWeb,
+    getHired,
+    knock,
+    arduino,
+    electro,
+    chamber,
+  ];
   const settings2 = {
     dots: true,
     infinite: true,

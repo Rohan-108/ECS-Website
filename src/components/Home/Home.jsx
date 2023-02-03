@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import Hero from "./Hero";
@@ -77,12 +78,25 @@ const Home = (props) => {
       <Particle />
       <Navbar currentUser={currentUser} setCurrentUser={setCurrentUser} />
       <Hero />
-      <div className="spectrumImage">
+      <motion.div
+        animate={{
+          scale: [1, 1.1, 1],
+        }}
+        transition={{
+          repeat: Infinity,
+          duration: 2,
+          type: "tween",
+          ease: "easeInOut",
+        }}
+        className="spectrumImage"
+      >
         <img src={spectrum} alt="" />
+      </motion.div>
+      <div>
+        <Link className="button1" to="/spectrum">
+          Explore More
+        </Link>
       </div>
-      <Link className="button1" to="/spectrum">
-        Explore More
-      </Link>
       <div className="sliders">
         <h2 style={{ letterSpacing: "3px" }}>Message</h2>
         <Slider {...settings1}>

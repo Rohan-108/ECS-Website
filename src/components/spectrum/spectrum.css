@@ -18,7 +18,6 @@
 }
 .spectrumImage>img {
     width: 95%;
-    object-fit: cover;
     clip-path: circle(50%);
 }
 .heading1 {

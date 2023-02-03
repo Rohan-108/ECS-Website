@@ -6,7 +6,7 @@ function InputControl(props) {
   return (
     <div className={styles.container}>
       {props.label && <label>{props.label}</label>}
-      <input type={props.type} {...props} />
+      <input type={props.type} onChange={props.handleChange} {...props} />
     </div>
   );
 }

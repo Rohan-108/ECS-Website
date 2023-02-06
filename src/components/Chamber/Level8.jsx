@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./chamber.css";
 import questionimg from "../../assets/galleryImage/Poesis.png";
 import styles from "../Modal/InputControl.module.css";
-const Level2 = ({ setLevel2, setLevel3 }) => {
+const Level8 = ({ setLevel8, setLevel9 }) => {
   const ans = {
     1: "a",
   };
@@ -30,15 +30,15 @@ const Level2 = ({ setLevel2, setLevel3 }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (haveSameData(ans, answers)) {
-      setLevel2(false);
-      setLevel3(true);
+      setLevel8(false);
+      setLevel9(true);
     } else {
       const obj1Length = Object.keys(ans).length;
       const obj2Length = Object.keys(answers).length;
       if (obj1Length === obj2Length) {
         Object.keys(answers).forEach((key) => {
           if (ans[key] !== answers[key]) {
-            const ins = document.getElementById(`l2q${key}`);
+            const ins = document.getElementById(`l8q${key}`);
             ins.style.borderColor = "red";
             ins.style.borderWidth = "2px";
           }
@@ -80,7 +80,7 @@ const Level2 = ({ setLevel2, setLevel3 }) => {
                   onChange={handleChange}
                   name="1"
                   required
-                  id="l2q1"
+                  id="l8q1"
                 />
               </div>
             </div>
@@ -94,4 +94,4 @@ const Level2 = ({ setLevel2, setLevel3 }) => {
   );
 };
 
-export default Level2;
+export default Level8;

@@ -1,0 +1,38 @@
+.question{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    color: azure;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.levelContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.questionContainer{
+    display: flex;
+    width: 100%;
+}
+.questionflex{
+    display: flex;
+    gap: 1rem;
+    width: 60%;
+    flex-direction: column;
+}
+.questionsimg{
+    width: 40%;
+}
+.questionsimg img{
+    width: 20rem;
+}
+@media only screen and (max-width:500px){
+    .question{
+        flex-direction: column;
+    }
+}

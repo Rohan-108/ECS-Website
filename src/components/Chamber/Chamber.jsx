@@ -59,13 +59,13 @@ const Chamber = () => {
       {L10 && <Level10 setLevel10={setLevel10} setLevel11={setLevel11} />}
       {L11 && <Level11 setLevel11={setLevel11} setLevel12={setLevel12} />}
       {L12 && <Level12 setLevel12={setLevel12} setLevel13={setLevel13} />}
-      {L13 && <Level13 setLevel13={setLevel13} setLevel14={setLevel9} />}
-      {L14 && <Level14 setLevel14={setLevel14} setLevel15={setLevel9} />}
-      {L15 && <Level15 setLevel15={setLevel15} setLevel16={setLevel9} />}
-      {L16 && <Level16 setLevel16={setLevel16} setLevel17={setLevel9} />}
-      {L17 && <Level17 setLevel17={setLevel17} setLevel18={setLevel9} />}
-      {L18 && <Level18 setLevel18={setLevel18} setLevel19={setLevel9} />}
-      {L19 && <Level19 setLevel19={setLevel19} setLevel20={setLevel9} />}
+      {L13 && <Level13 setLevel13={setLevel13} setLevel14={setLevel14} />}
+      {L14 && <Level14 setLevel14={setLevel14} setLevel15={setLevel15} />}
+      {L15 && <Level15 setLevel15={setLevel15} setLevel16={setLevel16} />}
+      {L16 && <Level16 setLevel16={setLevel16} setLevel17={setLevel17} />}
+      {L17 && <Level17 setLevel17={setLevel17} setLevel18={setLevel18} />}
+      {L18 && <Level18 setLevel18={setLevel18} setLevel19={setLevel19} />}
+      {L19 && <Level19 setLevel19={setLevel19} setLevel20={setLevel20} />}
       {L20 && <Level20 setLevel20={setLevel20} setWin={setWin} />}
       {win && <p>congratulations</p>}
       <Footer />

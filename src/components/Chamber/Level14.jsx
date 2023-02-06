@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./chamber.css";
 import questionimg from "../../assets/galleryImage/Poesis.png";
 import styles from "../Modal/InputControl.module.css";
-const Level14 = ({ setLevel, setLevel11 }) => {
+const Level14 = ({ setLevel14, setLevel15 }) => {
   const ans = {
     1: "a",
   };
@@ -30,8 +30,8 @@ const Level14 = ({ setLevel, setLevel11 }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (haveSameData(ans, answers)) {
-      setLevel(false);
-      setLevel11(true);
+      setLevel14(false);
+      setLevel15(true);
     } else {
       const obj1Length = Object.keys(ans).length;
       const obj2Length = Object.keys(answers).length;

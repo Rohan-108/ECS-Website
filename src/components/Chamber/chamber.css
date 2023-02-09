@@ -17,3 +17,13 @@
 .questionsimg img{
     width: 20rem;
 }
+.win{
+    max-width: 35rem;
+    height: 50vh;
+    margin: auto;
+}
+@media only screen and (max-width:500px){
+    .win {
+          margin-top: 5rem;
+        }
+}

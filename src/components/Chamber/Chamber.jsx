@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import Particle from "../Particle";
+import dobby from "../../assets/galleryImage/dobby.jpeg";
+import dobbys from "../../assets/galleryImage/chamberp.jpeg";
 import Level1 from "./Level1";
 import Level2 from "./Level2";
 import Level3 from "./Level3";
@@ -46,7 +49,21 @@ const Chamber = () => {
   const [win, setWin] = useState(false);
   return (
     <>
+      <Particle />
       <Navbar />
+      {L1 && (
+        <div className="question win">
+          <img src={dobbys} alt="aa" />
+          <p>
+            Now you embark on a journey to open the chamber of secrets.
+            <br />
+            But beware my friend on this journey you will face many challenges ,
+            but never forget you have a friend with immense information who will
+            help you on this journey.
+            <br /> Now, below is the first challenge in your journey......
+          </p>
+        </div>
+      )}
       {L1 && <Level1 setLevel1={setLevel1} setLevel2={setLevel2} />}
       {L2 && <Level2 setLevel2={setLevel2} setLevel3={setLevel3} />}
       {L3 && <Level3 setLevel3={setLevel3} setLevel4={setLevel4} />}
@@ -67,7 +84,17 @@ const Chamber = () => {
       {L18 && <Level18 setLevel18={setLevel18} setLevel19={setLevel19} />}
       {L19 && <Level19 setLevel19={setLevel19} setLevel20={setLevel20} />}
       {L20 && <Level20 setLevel20={setLevel20} setWin={setWin} />}
-      {win && <p>congratulations</p>}
+      {win && (
+        <p className="question win">
+          <div className="questionsimg">
+            <img src={dobby} alt="aa" />
+          </div>
+          “Congratulations! <br />
+          You have opened the chamber of secrets! History has again repeated
+          itself as the chamber of secrets has been opened once again. Only time
+          can tell if you are the only one to open it now”
+        </p>
+      )}
       <Footer />
     </>
   );

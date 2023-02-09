@@ -1,61 +1,35 @@
 import React from "react";
 import { useState } from "react";
+import { getDoc, doc } from "firebase/firestore";
+import { db } from "../../firebase";
 import "./chamber.css";
-import questionimg from "../../assets/galleryImage/Poesis.png";
+import questionimg from "../../assets/galleryImage/citizen.jpeg";
 import styles from "../Modal/InputControl.module.css";
 const Level17 = ({ setLevel17, setLevel18 }) => {
-  const ans = {
-    1: "a",
-  };
   const [answers, setAnswers] = useState({
     1: "",
   });
-  const haveSameData = function (obj1, obj2) {
-    const obj1Length = Object.keys(obj1).length;
-    const obj2Length = Object.keys(obj2).length;
-
-    if (obj1Length === obj2Length) {
-      return Object.keys(obj1).every(
-        (key) => obj2.hasOwnProperty(key) && obj2[key] === obj1[key]
-      );
-    }
-    return false;
-  };
   const handleChange = (e) => {
     setAnswers({
       ...answers,
       [e.target.name]: e.target.value.trim(),
     });
   };
-  const handleSubmit = (e) => {
+  const docref = doc(db, "Answers", "dWGHE89ckr8Afp9yMyIy");
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (haveSameData(ans, answers)) {
+    const response = await getDoc(docref);
+    const doc = response.data();
+    const ans = answers[1];
+    if (doc.level17 === ans) {
       setLevel17(false);
       setLevel18(true);
     } else {
-      const obj1Length = Object.keys(ans).length;
-      const obj2Length = Object.keys(answers).length;
-      if (obj1Length === obj2Length) {
-        Object.keys(answers).forEach((key) => {
-          if (ans[key] !== answers[key]) {
-            const ins = document.getElementById(`l17q${key}`);
-            ins.style.borderColor = "red";
-            ins.style.borderWidth = "2px";
-          }
-        });
-      }
+      const ins = document.getElementById(`l17q1`);
+      ins.style.borderColor = "red";
+      ins.style.borderWidth = "2px";
     }
-    // setData(() => {
-    //   return {
-    //     1: "",
-    //     2: "",
-    //     3: "",
-    //     4: "",
-    //     5: "",
-    //   };
-    // });
   };
-  console.log(answers);
   return (
     <>
       <div className="levelContainer">
@@ -66,13 +40,15 @@ const Level17 = ({ setLevel17, setLevel18 }) => {
             </div>
             <div className="questionflex">
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
-                laborum, obcaecati dignissimos nihil dicta doloremque saepe
-                labore nulla vitae molestiae, ducimus tempora reprehenderit sunt
-                voluptates exercitationem praesentium nemo, eveniet natus?
-                Soluta reiciendis aspernatur ad ipsa animi numquam consectetur,
-                ullam in nam odit fugiat eius quaerat quibusdam similique est
-                sunt quasi.
+                The following picture is taken from a movie poster. Termed as
+                the greatest film ever made, the film was nominated for Academy
+                Awards in nine categories and it won for Best Writing (Original
+                Screenplay). Although it was a critical success, the movie
+                failed to recoup its costs at the box office. The film faded
+                from view after its release, but it returned to public attention
+                when it was praised by French critics such as André Bazin and
+                re-released in 1956.
+                <br /> Name the movie.
               </p>
               <div className={styles.container}>
                 <input

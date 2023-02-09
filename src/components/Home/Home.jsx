@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import Hero from "./Hero";
@@ -15,7 +14,7 @@ import GallerySlider from "./GallerySlider";
 import afsana from "../../assets/galleryImage/Afsana.jpeg";
 import fresher from "../../assets/galleryImage/fresher.jpg";
 import aryan_batch from "../../assets/galleryImage/aryan_batch.jpg";
-import spectrum from "../../assets/galleryImage/spectrum.jpg";
+import spectrum from "../../assets/galleryImage/chamber.jpeg";
 import wasim from "../../assets/galleryImage/wasim.jpg";
 import dehleez from "../../assets/galleryImage/dehleez.jpeg";
 import rabul from "../../assets/galleryImage/rabul.jpeg";
@@ -78,23 +77,12 @@ const Home = (props) => {
       <Particle />
       <Navbar currentUser={currentUser} setCurrentUser={setCurrentUser} />
       <Hero />
-      <motion.div
-        animate={{
-          scale: [1, 1.1, 1],
-        }}
-        transition={{
-          repeat: Infinity,
-          duration: 2,
-          type: "tween",
-          ease: "easeInOut",
-        }}
-        className="spectrumImage"
-      >
+      <div className="spectrumImage" style={{ margin: "auto" }}>
         <img src={spectrum} alt="" />
-      </motion.div>
+      </div>
       <div>
-        <Link className="button1" to="/spectrum">
-          Explore More
+        <Link className="button1" to="/chamber">
+          Begin
         </Link>
       </div>
       <div className="sliders">

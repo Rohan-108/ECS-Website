@@ -3,6 +3,7 @@ import { useState } from "react";
 import { getDoc, doc } from "firebase/firestore";
 import { db } from "../../firebase";
 import "./chamber.css";
+import questionimg from "../../assets/galleryImage/booktalk.jpeg";
 import styles from "../Modal/InputControl.module.css";
 const Level2 = ({ setLevel2, setLevel3 }) => {
   const [answers, setAnswers] = useState({
@@ -37,21 +38,13 @@ const Level2 = ({ setLevel2, setLevel3 }) => {
         <div className="questionContainer">
           <div className="question">
             <div className="questionsimg">
-              {/* <img src={questionimg} alt="question hint" /> */}
+              <img src={questionimg} alt="question hint" />
             </div>
             <div className="questionflex">
               <p>
-                “Put me underneath God's sky <br />
-                and know me <br />
-                don't just see me with your eyes <br />
-                Take away <br />
-                this mask of flesh and bone and <br />
-                See me for my soul alone”
-                <br /> <br />
-                The following extract is taken from a novel written by the main
-                protagonist. Name the person who found the hidden meaning behind
-                the poem first and about whom the whole chapter is dedicated to
-                in the novel.
+                The images above relate to a novel that experienced a surge in
+                popularity from the booktok community in 2021.
+                <br /> Name the novel.
               </p>
               <div className={styles.container}>
                 <input

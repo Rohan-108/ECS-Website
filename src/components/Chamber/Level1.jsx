@@ -40,14 +40,12 @@ const Level1 = ({ setLevel1, setLevel2 }) => {
             </div>
             <div className="questionflex">
               <p>
-                Suffering from many mental illnesses with all people in society
-                rejecting and looking down upon him, even though all he wants is
-                to be accepted by others. After being brutally beaten, having
-                his medication cut off, his life begins to spiral downward
-                out-of-control into delusions, violence, and anarchy until he
-                eventually transforms into the infamous Clown-Prince of Crime .
-                <br />
-                Name the character from a famous movie?(first name)
+                A story of two friends stuck in an era of civil war. Due to the
+                war, one got left behind and the other went to America with his
+                father. Many years later, the friend who went to America returns
+                to save his friend’s son. Later in the story, it is revealed
+                that the two friends were actually brothers.
+                <br /> Name that novel whose plot is this.
               </p>
               <div className={styles.container}>
                 <input

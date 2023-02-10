@@ -13,6 +13,7 @@
     gap: 1rem;
     width: 70%;
     flex-direction: column;
+    user-select: none;
 }
 .questionsimg img{
     width: 20rem;

@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import { useState } from "react";
 
 const Accord = ({ Question, Answer }) => {
   const [show, setshow] = useState(false);

@@ -1,0 +1,130 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 0.5rem;
+}
+/* nav {
+    display: none;
+} */
+.mobile-menu {
+  position: absolute;
+  padding: 1rem;
+  top: 15px;
+  left: 15px;
+  display: none;
+  cursor: pointer;
+}
+.mobile-menu-exit {
+  margin: 0.5em;
+  cursor: pointer;
+  display: none;
+}
+#loginPng {
+  cursor: pointer;
+  display: block;
+  padding: 1rem;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 0;
+}
+#logoPng {
+  display: block;
+  padding: 1rem;
+  width: auto;
+  height: 3.8em;
+  top: 0;
+  left: 50vw;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  text-decoration: none;
+}
+li {
+  display: block;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+li:hover {
+  transform: scale(1.1);
+  color: whitesmoke;
+}
+@media only screen and (max-width: 1200px) {
+  .nav1 {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    left: 0;
+    top: 0;
+    background: #20272e;
+    height: 90vh;
+    padding: 1em;
+  }
+  nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    left: 0;
+    top: 0;
+    background: #20272e;
+    height: 90vh;
+    padding: 1em;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .mobile-menu-exit {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 0.5rem;
+  }
+  #logoPng {
+    display: block;
+    padding: 1rem;
+    width: auto;
+    height: 3em;
+    top: 0;
+    left: 50vw;
+  }
+}
+.displayname {
+  position: absolute;
+  top: 48px;
+  right: 8px;
+  color: whitesmoke;
+}

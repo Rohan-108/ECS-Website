@@ -47,8 +47,7 @@ export const Data = [
   {
     Id: 7,
 
-    Question:
-      "What are the various Career opportunities one can explore by taking ECE?",
+    Question: "What are the various Career opportunities one can explore by taking ECE?",
     Answer:
       "ECE is a highly lucrative branch of engineering and the ECE engineers have the independence to try their hands at various fields after graduating. One can go for higher studies as well if they wish. ECE engineers can take up any job they wish to if they have the required skills for the job.",
   },
@@ -62,8 +61,7 @@ export const Data = [
   {
     Id: 9,
 
-    Question:
-      "Where will I find the notes and question papers of previous years?",
+    Question: "Where will I find the notes and question papers of previous years?",
     Answer:
       "The notes and question papers of previous years can be accessed from the Resource Hub page.",
   },
@@ -71,8 +69,7 @@ export const Data = [
     Id: 10,
 
     Question: "Where do I learn more about the events of ECS?",
-    Answer:
-      "Details about the events of ECS are given on the homepage of this website.",
+    Answer: "Details about the events of ECS are given on the homepage of this website.",
   },
   {
     Id: 11,

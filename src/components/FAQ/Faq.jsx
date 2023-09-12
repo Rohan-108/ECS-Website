@@ -1,29 +1,21 @@
-import React, { useState } from "react";
-import Footer from "../Footer/Footer";
-import Navbar from "../Navbar/Navbar";
-import Particle from "../Particle";
-import "./Faq.css";
+import { useState } from "react";
+import "./Faq.scss";
 import { Data } from "../FAQ/FaqData";
-import Accord from "./Accord.jsx";
+import Accord from "./Accord";
 
-const Faq = (props) => {
-  const { currentUser, setCurrentUser } = props;
-  const [data, setdata] = useState(Data);
+const Faq = () => {
+  const [data] = useState(Data);
   return (
     <>
-      <Particle />
-      <Navbar currentUser={currentUser} setCurrentUser={setCurrentUser} />
       <h1 className="Faq-Heading"> Frequently Asked Questions</h1>
       <div className="faq">
         <div className="main-faq-div">
           {data.map((curElem) => {
-            const { Id} = curElem;
+            const { Id } = curElem;
             return <Accord key={Id} {...curElem} />;
           })}
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

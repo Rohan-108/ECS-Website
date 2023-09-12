@@ -1,0 +1,19 @@
+.dev-container1 {
+  min-height: 95vh;
+  width: 90%;
+  margin: 7em auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.container1 {
+  margin-bottom: 8rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .dev-container1 {
+    width: 100%;
+    font-size: 0.8em;
+  }
+}

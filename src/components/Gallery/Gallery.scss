@@ -1,0 +1,51 @@
+.Glimpses {
+  color: rgb(240, 236, 236);
+  font-family: Poppins, sans-serif;
+  font-size: 2.2rem;
+}
+
+.card {
+  width: 6em;
+  border-radius: 15%;
+}
+
+.card-img-top {
+  border-radius: 15%;
+  width: 24em;
+  height: 19em;
+  object-fit: cover;
+}
+
+.Big_Div {
+  justify-content: center;
+  text-align: center;
+}
+
+.flex_Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4.2em;
+}
+
+.smallDiv {
+  width: 24em;
+  height: 19em;
+}
+@media only screen and (max-width: 410px) {
+  .card {
+    width: 3em;
+    border-radius: 15%;
+  }
+  .smallDiv {
+    width: 20em;
+    height: 15em;
+  }
+  .card-img-top {
+    border-radius: 15%;
+    width: 20em;
+    height: 15em;
+    object-fit: cover;
+  }
+}

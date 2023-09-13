@@ -50,5 +50,27 @@ const devData = [
     linkedin: "https://www.linkedin.com/in/maharnav-deka-06742815a/",
     src: maharav,
   },
+  {
+    name: "Barnil Sarma",
+    desig: "Developer",
+    insta: "",
+    linkedin: "",
+    src: "https://res.cloudinary.com/dcwqsevti/image/upload/v1694601618/ECS%20PHoto%20members/barnil.jpg",
+  },
+
+  {
+    name:"Pragyan Das",
+    desig: "Developer",
+    insta: "",
+    linkedin: "",
+    src: "https://res.cloudinary.com/dcwqsevti/image/upload/v1694601616/ECS%20PHoto%20members/pragyan.jpg",
+  },
+   {
+    name:"Jagatjyoti Deb",
+    desig: "UI/UX",
+    insta: "",
+    linkedin: "",
+    src: "https://res.cloudinary.com/dcwqsevti/image/upload/v1694601615/ECS%20PHoto%20members/jagat.jpg",
+  },
 ];
 export default devData;

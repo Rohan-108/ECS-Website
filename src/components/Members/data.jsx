@@ -1,6 +1,6 @@
 export const leadData = [
   {
-    name: "Nishtha Baruah",
+    name: "Nistha Baruah",
     desig: "President",
     insta: "https://www.facebook.com/nistha.baruah.58",
     linkedin: "https://www.linkedin.com/in/nistha-baruah-201abb212/",
@@ -11,11 +11,11 @@ export const leadData = [
     desig: "Vice President",
     insta: "https://www.facebook.com/profile.php?id=100015547038499",
     linkedin: "https://www.linkedin.com/in/aaryan4200/",
-    src: 'https://res.cloudinary.com/dcwqsevti/image/upload/v1694601616/ECS%20PHoto%20members/aaryan.jpg',
-  }
+    src: "https://res.cloudinary.com/dcwqsevti/image/upload/v1694601616/ECS%20PHoto%20members/aaryan.jpg",
+  },
 ];
 export const senData = [
-   {
+  {
     name: "Aryadeep Gogoi",
     desig: "General Secretary",
     insta: "https://www.facebook.com/profile.php?id=100076109862434",
@@ -36,14 +36,14 @@ export const senData = [
     linkedin: "https://www.linkedin.com/mwlite/in/ananya-chetia-a06ab6223",
     src: "https://res.cloudinary.com/dcwqsevti/image/upload/v1694601617/ECS%20PHoto%20members/ananya.jpg",
   },
-    {
+  {
     name: "Priyambada Hazarika",
     desig: "Design Head",
     insta: "https://www.facebook.com/profile.php?id=100076411391244",
     linkedin: "https://www.linkedin.com/in/priyambada-hazarika-423237241",
     src: "https://res.cloudinary.com/dcwqsevti/image/upload/v1694603904/ECS%20PHoto%20members/priyambada.jpg",
   },
-   {
+  {
     name: "Vishnu Padmakumar",
     desig: "Treasurer",
     insta: "https://www.facebook.com/profile.php?id=100075797247014&mibextid=ZbWKwL",
@@ -70,7 +70,8 @@ export const junData = [
     name: "Satyam Das",
     desig: "Junior Executive Member",
     insta: "https://www.facebook.com/profile.php?id=100088016045181&mibextid=nW3QTL",
-    linkedin: "https://www.linkedin.com/in/satyam-das-695641254?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBxDpoIsbRSiZxo%2FuoDtAjw%3D%3D",
+    linkedin:
+      "https://www.linkedin.com/in/satyam-das-695641254?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBxDpoIsbRSiZxo%2FuoDtAjw%3D%3D",
     src: "https://res.cloudinary.com/dcwqsevti/image/upload/v1694601615/ECS%20PHoto%20members/satyam.jpg",
   },
   {
@@ -167,7 +168,8 @@ export const junData = [
   {
     name: "Barnil Sarma",
     desig: "Junior Technical Member",
-    insta: "https://m.facebook.com/profile.php/?id=100056956539956&name=xhp_nt__fb__action__open_user",
+    insta:
+      "https://m.facebook.com/profile.php/?id=100056956539956&name=xhp_nt__fb__action__open_user",
     linkedin: "https://www.linkedin.com/in/barnil-sarma-34383a255/",
     src: "https://res.cloudinary.com/dcwqsevti/image/upload/v1694601618/ECS%20PHoto%20members/barnil.jpg",
   },
@@ -177,5 +179,5 @@ export const junData = [
     insta: "https://www.facebook.com/profile.php?id=100087643579805&mibextid=ZbWKwL",
     linkedin: "https://www.linkedin.com/in/garvit-khare-2297a924b",
     src: "https://res.cloudinary.com/dxdxzcn0q/image/upload/v1694782694/IMG_20230915_182739_pwyd26.jpg",
-  }
+  },
 ];

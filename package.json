@@ -22,9 +22,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .jsx --ext .js --fix",
-    "pretty": "prettier --write .",
-    "preinstall": "npx only-allow pnpm",
-    "prepare": "simple-git-hooks"
+    "pretty": "prettier --write ."
   },
   "eslintConfig": {
     "extends": [
@@ -42,8 +40,8 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "pre-commit": "^1.2.2",
     "prettier": "^2.7.1",
+    "pre-commit": "^1.2.2",
     "sass": "^1.56.1",
     "vite-plugin-svgr": "^3.2.0",
     "vite-tsconfig-paths": "^4.2.1"

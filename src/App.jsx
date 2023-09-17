@@ -1,8 +1,8 @@
-import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home/Home";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "./firebase";
+import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
+import Home from "./components/Home/Home";
+import { auth } from "./firebase";
 import Developers from "./components/Developers/Developers";
 import Faq from "./components/FAQ/Faq";
 import Member from "./components/Members/Member";
@@ -12,6 +12,8 @@ import Protected from "./Protected";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Particle from "./components/Particle";
+import Spectare from "./components/Spectare/Spectare";
+import Events from  "./components/Events/Events";
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
   onAuthStateChanged(auth, (user) => {
@@ -39,6 +41,8 @@ function App() {
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/Faq" element={<Faq />} />
         <Route path="/Member" element={<Member />} />
+        <Route path="/Spectare" element={<Spectare/>}/>
+        <Route path="/Events" element={<Events/>}/>
       </Routes>
       <Footer />
     </>

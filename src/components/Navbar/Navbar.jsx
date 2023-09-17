@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import login from "../../assets/images/login.png";
 import exit from "../../assets/images/exit.svg";
 import menu from "../../assets/images/menu.svg";
-import { Link, useLocation } from "react-router-dom";
 import "./navbar.scss";
 import Login from "../Modal/Login";
 import SignUp from "../Modal/SignUp";
@@ -42,7 +42,7 @@ const Navbar = (props) => {
           setCurrentUser={setCurrentUser}
         />
       )}
-      <div className="navbar_container">
+      <div className="navbar_container" style={{margin:'auto'}}>
         <div className="logo">
           <img
             onClick={() => changeStyle(1)}
@@ -74,18 +74,22 @@ const Navbar = (props) => {
               </li>
             )}
             <li>
-              {location.pathname !== "/" ? (
-                <Link to="/">Annual Attractions</Link>
+              {/* {location.pathname !== "/" ? (
+                <Link to="/">Events</Link>
               ) : (
-                <a href="#annual">Annual Attractions</a>
-              )}
+                <Link to="/Events">Events</Link>
+              )} */}
+              <Link to="/Events">Events</Link>
             </li>
-            <li>
+            {/* <li>
               {location.pathname !== "/" ? (
                 <Link to="/">About Us</Link>
               ) : (
                 <a href="#about_us">About Us</a>
               )}
+            </li> */}
+            <li>
+              <Link to="/Spectare">Spectre</Link>
             </li>
             <li>
               <Link to="/Member">Members</Link>
@@ -95,6 +99,8 @@ const Navbar = (props) => {
             </li>
             <li>
               <Link to="/faq">FAQ</Link>
+            </li>
+            <li>
             </li>
           </ul>
         </nav>

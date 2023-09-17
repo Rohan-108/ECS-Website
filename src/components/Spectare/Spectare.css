@@ -1,0 +1,62 @@
+.cardSpectare{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    z-index:5;
+    backdrop-filter: blur(5px);
+    background-color:#9777ff37;
+    width:30vw;
+    height:45vh;
+    padding:0;
+}
+.cardSpectare #p{
+    opacity:0;
+    transition-duration: 0.5s;
+}
+.cardSpectare:hover #p{
+    opacity:1;
+    backdrop-filter: blur(3px);
+    transition-duration: 0.5s;
+}
+.cardSpectare img{
+    transition-duration: 1s;
+    height:30vh;
+    width:20vw;
+}
+.cardSpectare:hover img{
+    transition-duration: 1s;
+}
+.cardSpectare .magLink{
+    transition-duration: 1s;  
+    margin-top:1rem;
+}
+.cardSpectare:hover .magLink{
+    transition-duration: 1s;
+}
+@media only screen and (max-width:786px){
+    .cardSpectare{
+        flex-direction: column;
+        width:80vw;
+    }
+    /* .cardSpectare img{
+        transition-duration: 1s;
+        height:50vh;
+        width:100%;
+        border-top-left-radius: 2rem;
+        border-top-left-radius: 2rem;
+        transform: translateX(0%);
+    }
+    .cardSpectare:hover img{
+        transition-duration: 1s;
+        transform: translateX(0%);
+    }
+    .cardSpectare .magLink{
+        transition-duration: 1s;
+        transform: translateX(0%);
+    }
+    .cardSpectare:hover .magLink{
+        transition-duration: 1s;
+        transform: translateX(0%);
+    } */
+}

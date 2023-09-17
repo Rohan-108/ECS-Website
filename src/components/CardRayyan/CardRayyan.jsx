@@ -13,10 +13,10 @@ const CardRayyan = ({ data }) => {
             <p>{data.desig}</p>
             <div className="linksR">
               <a href={data.insta} target="_blank" rel="noreferrer">
-                <img src={facebook} alt="insta" className="soc-icon" loading="lazy" />
+                <img src={facebook} alt="insta" className="soc-icon" loading="lazy" style={{filter:'invert(100%)'}} />
               </a>
               <a href={data.linkedin} target="_blank" rel="noreferrer">
-                <img src={linkedin} alt="twitter" className="soc-icon" loading="lazy" />
+                <img src={linkedin} alt="twitter" className="soc-icon" loading="lazy" style={{filter:'invert(100%)'}}/>
               </a>
             </div>
           </div>

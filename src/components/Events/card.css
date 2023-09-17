@@ -1,0 +1,39 @@
+.card_container{
+    transition-duration: 1s;
+    scale:1;
+    animation:showUp;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    width:40vw;
+    height:70vh;
+}
+.card_container img{
+    height:50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card_container .messs{
+     color:#ffffffb6;   
+}
+@keyframes showUp{
+    0%{
+        scale:0.1;
+    }
+    100%{
+        scale:1;
+    }
+}
+@media screen and (max-width:768px){
+    .card_container{
+        width:80vw;
+        height:70vh;
+        padding:0.5rem;
+    }
+    .card_container .messs{
+        font-size:0.8rem;
+    }
+    .card_container img{
+        height:10vh;
+    }
+}

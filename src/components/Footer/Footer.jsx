@@ -18,15 +18,15 @@ const Footer = () => {
                 gap: "1rem",
               }}
             >
-              <Link className="linkss" to="/ResourceHub">
+              <a className="linkss" target='blank' href="https://drive.google.com/drive/u/0/folders/1YhM-dgozkKS_j73HACHdPwyk_7jlzggC">
                 Resource Hub
-              </Link>
+              </a>
               <a href="#about_us" className="linkss">
                 Message
               </a>
-              <a href="#annual" className="linkss">
+              <Link to="/Events" className="linkss">
                 Annual Attractions
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col2">

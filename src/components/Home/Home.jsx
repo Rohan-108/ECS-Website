@@ -91,23 +91,23 @@ const Home = () => {
             src={wasim}
           />
           <Message
-            message={presidentMessage}
-            name={"Afsana Yasmin"}
-            designation={"President"}
-            src={afsana}
+            message={gsMessage}
+            name={"Aryadeep Gogoi"}
+            designation={"General Secretary"}
+            src="https://i.ibb.co/LPdBVhG/DSC-0217-01-1.jpg"
           />
           <Message
-            message={gsMessage}
+            message={vcMessage}
             name={"Aaryan"}
-            designation={"General Secretary"}
+            designation={"Vice President, ECS"}
             src={aryanBatch}
           />
-          <Message
+          {/* <Message
             message={vcMessage}
             name={"Aditya Bhura"}
             designation={"Senior Member"}
             src={"https://i.ibb.co/0Dwq6cC/aditya.jpg"}
-          />
+          /> */}
           <Message
             message={hodMessage}
             designation={"HOD"}
@@ -120,7 +120,7 @@ const Home = () => {
         <h2 style={{ letterSpacing: "2px" }}>About Us</h2>
         <div className="about_mess">{aboutUs}</div>
       </div>
-      <div className="annual" id="annual">
+      {/* <div className="annual" id="annual">
         <h2 style={{ letterSpacing: "2px" }}>Annual Attractions</h2>
         <Slider {...settings}>
           <Cards src={light} message={orientation} ocassion={"Orientation"} />
@@ -128,7 +128,7 @@ const Home = () => {
           <Cards src={spect} message={spectre} ocassion={"Spectre"} />
           <Cards message={dehleez} ocassion={"Dehleez"} src={dehle} />
         </Slider>
-      </div>
+      </div> */}
       <div className="gallery_container">
         <h2
           style={{

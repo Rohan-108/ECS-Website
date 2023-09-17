@@ -3,17 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@vitejs/plugin-react": "^4.0.4",
     "firebase": "^9.12.1",
     "framer-motion": "^7.6.18",
     "motion": "^10.14.3",
+    "node-modules": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.2",
     "react-slick": "^0.29.0",
     "react-tsparticles": "^2.3.3",
     "slick-carousel": "^1.8.1",
+    "tailwindcss": "^3.3.3",
     "tsparticles": "^2.3.4",
-    "@vitejs/plugin-react": "^4.0.4",
     "vite": "^4.4.9"
   },
   "scripts": {
@@ -22,7 +24,6 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .jsx --ext .js --fix",
     "pretty": "prettier --write .",
-    "precommit": "lint-staged",
     "preinstall": "npx only-allow pnpm",
     "prepare": "simple-git-hooks"
   },
@@ -33,8 +34,6 @@
     ]
   },
   "devDependencies": {
-    "vite-plugin-svgr": "^3.2.0",
-    "vite-tsconfig-paths": "^4.2.1",
     "eslint": "^8.27.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
@@ -45,19 +44,10 @@
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0",
     "lint-staged": "^13.0.3",
+    "pre-commit": "^1.2.2",
     "prettier": "^2.7.1",
     "sass": "^1.56.1",
-    "simple-git-hooks": "^2.8.1"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npm precommit"
-  },
-  "lint-staged": {
-    "*.(jsx|js)": [
-      "pnpm pretty"
-    ],
-    "*.scss": [
-      "pnpm pretty"
-    ]
+    "vite-plugin-svgr": "^3.2.0",
+    "vite-tsconfig-paths": "^4.2.1"
   }
 }

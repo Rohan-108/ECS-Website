@@ -12,6 +12,7 @@ nav {
   gap: 5rem;
   padding: 0.5rem;
 }
+
 /* nav {
     display: none;
 } */
@@ -58,6 +59,7 @@ li {
   display: block;
   color: white;
   text-decoration: none;
+  transition-duration: 0.9s;
   list-style: none;
 }
 a {
@@ -69,6 +71,7 @@ a {
 li:hover {
   transform: scale(1.1);
   color: whitesmoke;
+  transition-duration: 0.5s;
 }
 @media only screen and (max-width: 1200px) {
   .nav1 {

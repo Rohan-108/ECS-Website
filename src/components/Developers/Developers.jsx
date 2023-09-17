@@ -3,12 +3,12 @@ import CardRayyan from "../CardRayyan/CardRayyan";
 import "./developers.scss";
 import devData from "./devData";
 const Developers = () => {
-  const dataAbhinav = {
-    name: "Abhinav Ghosh",
+  const dataRohan = {
+    name: "Rohan Jha",
     desig: "Technical Head",
-    insta: "https://www.facebook.com/profile.php?id=100006867829068&mibextid=ZbWKwL",
-    linkedin: "https://www.linkedin.com/in/abhinav-ghosh-sl/",
-    src: "https://i.ibb.co/NSQW2PN/Whats-App-Image-2022-11-08-at-12-58-15-AM.jpg",
+    insta: "https://www.facebook.com/profile.php?id=100010061770737",
+    linkedin: "https://www.linkedin.com/in/rohan-jha-ab635322b/",
+    src: "https://res.cloudinary.com/dcwqsevti/image/upload/v1694601618/ECS%20PHoto%20members/rohan.jpg",
   };
   return (
     <>
@@ -24,7 +24,7 @@ const Developers = () => {
           marginBottom: "-5rem",
         }}
       >
-        <CardRayyan data={dataAbhinav} />
+        <CardRayyan data={dataRohan} />
       </motion.div>
       <motion.div
         className="dev-container1"

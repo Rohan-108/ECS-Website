@@ -94,7 +94,7 @@ const Home = () => {
             message={gsMessage}
             name={"Aryadeep Gogoi"}
             designation={"General Secretary"}
-            src="https://i.ibb.co/LPdBVhG/DSC-0217-01-1.jpg"
+            src="https://res.cloudinary.com/dyuggtbjl/image/upload/v1695668086/ecs/aryadeep_ayq2j9.jpg"
           />
           <Message
             message={vcMessage}

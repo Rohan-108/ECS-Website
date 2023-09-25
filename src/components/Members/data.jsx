@@ -20,7 +20,7 @@ export const senData = [
     desig: "General Secretary",
     insta: "https://www.facebook.com/profile.php?id=100076109862434",
     linkedin: "https://www.linkedin.com/in/aryadeep-gogoi-696609236",
-    src: "https://res.cloudinary.com/dcwqsevti/image/upload/v1694603003/ECS%20PHoto%20members/aryadeep_pugod1.jpg",
+    src: "https://res.cloudinary.com/dyuggtbjl/image/upload/v1695668086/ecs/aryadeep_ayq2j9.jpg",
   },
   {
     name: "Rohan Jha",
@@ -109,7 +109,7 @@ export const junData = [
     src: "https://res.cloudinary.com/dcwqsevti/image/upload/v1694601616/ECS%20PHoto%20members/parismita.jpg",
   },
   {
-    name: "Jaruplvath Uday Karthik",
+    name: "Jaruplavath Uday Karthik",
     desig: "Junior Design Member",
     insta: "https://www.facebook.com/jaruplavath.udaykarthik/",
     linkedin: "https://www.linkedin.com/in/jaruplavath-udaykarthik-175783253/",

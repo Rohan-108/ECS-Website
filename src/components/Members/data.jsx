@@ -38,7 +38,7 @@ export const senData = [
   },
     {
     name: "Priyambada Hazarika",
-    desig: "Design Head",
+    desig: "Media & Graphic Design Head",
     insta: "https://www.facebook.com/profile.php?id=100076411391244",
     linkedin: "https://www.linkedin.com/in/priyambada-hazarika-423237241",
     src: "https://res.cloudinary.com/dcwqsevti/image/upload/v1694603904/ECS%20PHoto%20members/priyambada.jpg",

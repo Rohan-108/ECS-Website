@@ -102,6 +102,12 @@ const Home = () => {
             designation={"Vice President, ECS"}
             src={aryanBatch}
           />
+          <Message
+            message={presidentMessage}
+            name={"Nistha Baruah"}
+            designation={"President, ECS"}
+            src="https://res.cloudinary.com/dcwqsevti/image/upload/v1694601616/ECS%20PHoto%20members/nistha.jpg"
+          />
           {/* <Message
             message={vcMessage}
             name={"Aditya Bhura"}

@@ -94,13 +94,19 @@ const Home = () => {
             message={gsMessage}
             name={"Aryadeep Gogoi"}
             designation={"General Secretary"}
-            src="https://i.ibb.co/LPdBVhG/DSC-0217-01-1.jpg"
+            src="https://res.cloudinary.com/dyuggtbjl/image/upload/v1695668086/ecs/aryadeep_ayq2j9.jpg"
           />
           <Message
             message={vcMessage}
             name={"Aaryan"}
             designation={"Vice President, ECS"}
             src={aryanBatch}
+          />
+          <Message
+            message={presidentMessage}
+            name={"Nistha Baruah"}
+            designation={"President, ECS"}
+            src="https://res.cloudinary.com/dcwqsevti/image/upload/v1694601616/ECS%20PHoto%20members/nistha.jpg"
           />
           {/* <Message
             message={vcMessage}

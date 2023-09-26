@@ -32,8 +32,8 @@ const Developers = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ type: "spring", duration: 1.8 }}
       >
-        {devData.map((elem, i) => (
-          <CardRayyan key={i} data={elem} />
+        {devData.map((elem) => (
+          <CardRayyan key={elem.name} data={elem} />
         ))}
       </motion.div>
     </>

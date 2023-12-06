@@ -20,7 +20,7 @@ export const senData = [
     desig: "General Secretary",
     insta: "https://www.facebook.com/profile.php?id=100076109862434",
     linkedin: "https://www.linkedin.com/in/aryadeep-gogoi-696609236",
-    src: "https://res.cloudinary.com/dyuggtbjl/image/upload/v1695668086/ecs/aryadeep_ayq2j9.jpg",
+    src: "https://res.cloudinary.com/dhry5xscm/image/upload/v1701891378/IMG-20231110-WA0085_jvzm0j.jpg",
   },
   {
     name: "Rohan Jha",

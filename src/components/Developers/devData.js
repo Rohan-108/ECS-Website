@@ -27,7 +27,7 @@ const devData = [
     desig: "UI/UX",
     insta: "https://www.facebook.com/profile.php?id=100076109862434",
     linkedin: "https://www.linkedin.com/in/aryadeep-gogoi-696609236/",
-    src: "https://i.ibb.co/LPdBVhG/DSC-0217-01-1.jpg",
+    src: "https://res.cloudinary.com/dhry5xscm/image/upload/v1701891378/IMG-20231110-WA0085_jvzm0j.jpg",
   },
   {
     name: "Jacinth Mahanta",
@@ -52,14 +52,14 @@ const devData = [
   },
 
   {
-    name:"Pragyan Das",
+    name: "Pragyan Das",
     desig: "Developer",
     insta: "https://www.facebook.com/profile.php?id=100087648530022&mibextid=2JQ9oc ",
     linkedin: "https://www.linkedin.com/in/pragyan-das-197086255",
     src: "https://res.cloudinary.com/dcwqsevti/image/upload/v1694601616/ECS%20PHoto%20members/pragyan.jpg",
   },
-   {
-    name:"Jagatjyoti Deb",
+  {
+    name: "Jagatjyoti Deb",
     desig: "UI/UX",
     insta: "https://www.facebook.com/profile.php?id=100084536361943",
     linkedin: "https://www.linkedin.com/in/jagatjyoti-deb-0a57bb223/",
